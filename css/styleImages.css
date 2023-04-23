@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    height: 100vh; 
+    background-color: rgb(206, 201, 211);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: 'Marcellus', serif;
+}
+
