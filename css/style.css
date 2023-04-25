@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
+/* dropdown menu and body */
 body {
     margin: 0;
     height: 100vh; 
@@ -75,6 +76,18 @@ body {
     color: white;
 }
 
+#bottomBar {
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    width: 100vw;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 10%;
+}
+
+
+/* homepage */
 .ball {
     align-self: center;
     cursor: pointer;
@@ -91,13 +104,37 @@ body {
     transform: scale(0.5);
 }
 
-#bottomBar {
+
+/* images page */
+.gallery {
+    align-self: center;
     display: flex;
-    justify-content: left;
-    height: 50px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
     width: 100vw;
-    box-sizing: border-box;
-    background-color: black;
-    opacity: 10%;
+    height: 100vh;
+    margin: 32px;
+    gap: 32px;
 }
 
+.galleryImgs img {
+    max-width: 75vw;
+    max-height: 75vh;
+}
+
+.galleryImgsGroup {
+    max-width: 75vw;
+    max-height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.galleryImgsGroup img {
+    max-width: 40vw;
+    max-height: 40vh;
+}

@@ -5,12 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danice Ball</title>
-    <script src="./js/imagesJs.js" defer></script>
-    <link rel="stylesheet" href="./css/styleImages.css">
+    <script src="./js/webbie.js" defer></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <div class="images">
-        <div></div>
+
+    <div id="topBar">
+        <div id="dropDownBtn"><img id="dropImg" src="./img/dropdown.png" alt="menu"></div>
     </div>
+
+    <div id="dropDown" class="hide">
+        <div class="pageDrop"><a href="./index.html">Home</a></div>
+        <div class="pageDrop"><a href="./words.html">Words</a></div>
+        <div class="pageDrop"><a href="./about.html">About</a></div>
+    </div>  
+
+    <div class="gallery">
+        <div class="galleryImgs" class="paint"><img src="./img/cityscape.jpeg" alt=""></div>
+        <div class="galleryImgsGroup" class="digital">
+            <img src="./img/dood5.jpg" alt="">
+            <img src="./img/dood6.jpg" alt="">
+            <img src="./img/dood7.jpg" alt="">
+            <img src="./img/dood8.jpg" alt="">
+        </div>
+        <div class="galleryImgsGroup" class="other">
+            <img src="./img/butt.jpg" alt="">
+            <img src="./img/slump.JPG" alt="">
+        </div>
+    </div>
+
+    <div id="bottomBar"></div>
+
 </body>
 </html>

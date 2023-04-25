@@ -2,7 +2,9 @@
 //what to call third category of data/science/policy/climate
 //BALL engraved on ball - needs to be a solid border - Illustrator and export as svg
 //compatibility for ios?
-//github and push
+//github access change to SSH?
+//box shadow for animations?
+//READ.me?
 
 //dropdown menu on hover - three lines icon in img folder - disappears when not hovering 
 const dropDownBtn = document.querySelector('#dropDownBtn');
