@@ -115,8 +115,7 @@ body {
     overflow: scroll;
     width: 100vw;
     height: 100vh;
-    margin: 32px;
-    gap: 32px;
+    gap: 70px;
 }
 
 .galleryImgs img {
@@ -124,9 +123,21 @@ body {
     max-height: 75vh;
 }
 
-.galleryImgsGroup {
-    max-width: 75vw;
-    max-height: 75vh;
+/* when got rid of galleryImgsGroup size constraints, imgs stopped overlapping */
+/* why need to specify 2 vs 4? */
+.galleryImgsGroup2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.galleryImgsGroup2 img {
+    max-width: 45vw;
+    max-height: 60vh;
+}
+
+.galleryImgsGroup4 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -134,7 +145,8 @@ body {
     gap: 16px;
 }
 
-.galleryImgsGroup img {
+.galleryImgsGroup4 img {
     max-width: 40vw;
     max-height: 40vh;
 }
+

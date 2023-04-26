@@ -5,6 +5,7 @@
 //github access change to SSH?
 //box shadow for animations?
 //READ.me?
+//bundle all js files into one? Wrap sometimes unnecessary functions in if statements?
 
 //dropdown menu on hover - three lines icon in img folder - disappears when not hovering 
 const dropDownBtn = document.querySelector('#dropDownBtn');
@@ -29,6 +30,7 @@ dropDown.addEventListener('mouseleave', () => {
 //ball animation
 const ball = document.querySelector('.ball');
 
+if (ball) {
 ball.addEventListener('mouseover', () => {
     ball.classList.add('isHover');
   });
@@ -40,4 +42,5 @@ ball.addEventListener('mouseleave', () => {
 ball.addEventListener('click', () => {
     ball.classList.remove('isHover');
     ball.classList.add('onClick');
-  });
+  })
+}
