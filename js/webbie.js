@@ -1,13 +1,14 @@
 //set background as a photo of paint swooshes
-//what to call third category of data/science/policy/climate
+//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality
 //BALL engraved on ball - needs to be a solid border - Illustrator and export as svg
-//compatibility for ios?
+//compatibility for ios/depreceated browsers? if (css.supports ...) {...}
+//change color of dropdown options - get rid of transparency
 //github access change to SSH?
-//box shadow for animations?
+//box shadows?
 //READ.me?
 //bundle all js files into one? Wrap sometimes unnecessary functions in if statements?
 
-//dropdown menu on hover - three lines icon in img folder - disappears when not hovering 
+//dropdown menu on hover - three lines icon in img folder, transitons to an x when open
 const dropDownBtn = document.querySelector('#dropDownBtn');
 const dropDown = document.querySelector('#dropDown');
 

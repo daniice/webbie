@@ -4,7 +4,7 @@
 body {
     margin: 0;
     height: 100vh; 
-    background-color: rgb(206, 201, 211);
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -18,18 +18,19 @@ body {
     width: 100vw;
     overflow: hidden;
     box-sizing: border-box;
-    background-color: rgba(0,0,0,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    flex-shrink: 0;
 }
 
 #topBar img {
     min-width: 160px;
     min-height: 100%;
-    opacity: 0.2;
     cursor: pointer;
+    opacity: 0;
 }
 
 #topBar img:hover {
-    opacity: 0.4;
+    opacity: 0;
 }
 
 #dropDown {
@@ -52,15 +53,17 @@ body {
     width: 160px;
     height: 45px;
     box-sizing: border-box;
-    border: 1px solid rgba(0,0,0,0.1);
+    background-color: rgba(255,255,255,0.1); 
+    border: 1px solid rgba(255,255,255,0.1);
     text-align: center;
+    color: white;
     line-height: 45px;
     font-size: 24px;
 }
 
 .pageDrop a {
     text-decoration: none;
-    color: rgba(0,0,0,0.3);
+    color: white;
     font-family: 'Marcellus', serif;
     display: inline-block;
     width: 100%;
@@ -68,22 +71,22 @@ body {
 }
 
 .pageDrop:hover {
-    background-color: rgba(0,0,0,0.1);
-    color: white;
+    background-color: white;
+    color: black;
 }
 
 .pageDrop:hover a {
-    color: white;
+    color: black;
 }
 
 #bottomBar {
     display: flex;
     justify-content: left;
-    height: 50px;
+    height: 60px;
     width: 100vw;
     box-sizing: border-box;
-    background-color: black;
-    opacity: 10%;
+    background-color: rgba(255,255,255,0.1);
+    flex-shrink: 0;
 }
 
 
@@ -115,7 +118,11 @@ body {
     overflow: scroll;
     width: 100vw;
     height: 100vh;
-    gap: 70px;
+    flex-shrink: 1;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);  
+    scroll-snap-type: y mandatory;
+    /* first two scroll snap attributes for browser compatibility */
 }
 
 .galleryImgs img {
@@ -123,13 +130,18 @@ body {
     max-height: 75vh;
 }
 
-/* when got rid of galleryImgsGroup size constraints, imgs stopped overlapping */
-/* why need to specify 2 vs 4? */
+.galleryImgs {
+    scroll-snap-align: center;
+    padding: 35px;
+}
+
 .galleryImgsGroup2 {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
+    scroll-snap-align: center;
+    padding: 35px;
 }
 
 .galleryImgsGroup2 img {
@@ -139,14 +151,27 @@ body {
 
 .galleryImgsGroup4 {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 16px;
+    scroll-snap-align: center;
+    padding: 35px;
+}
+
+.group4First, .group4Second {
+    display: flex;
     gap: 16px;
 }
 
 .galleryImgsGroup4 img {
     max-width: 40vw;
     max-height: 40vh;
+}
+
+hr { 
+    width:100%; 
+    height:1px; 
+    background: #fff 
 }
 
