@@ -1,34 +1,38 @@
-//set background as a photo of paint swooshes
+//set background as a photo of paint swooshes?
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality
+//allow option to select random writing piece
 //BALL engraved on ball - needs to be a solid border - Illustrator and export as svg
 //compatibility for ios/depreceated browsers? if (css.supports ...) {...}
 //change color of dropdown options - get rid of transparency
+//appear dropdown options to side rather than down
 //github access change to SSH?
 //box shadows?
 //READ.me?
 //bundle all js files into one? Wrap sometimes unnecessary functions in if statements?
 
-//dropdown menu on hover - three lines icon in img folder, transitons to an x when open
+//dropdown menu on hover - two lines flip up 90deg, three options come in from right of page
+const topBar = document.querySelector('#topBar');
 const dropDownBtn = document.querySelector('#dropDownBtn');
-const dropDown = document.querySelector('#dropDown');
+const pageDrop = Array.from(document.getElementsByClassName('pageDrop'));
 
 dropDownBtn.addEventListener('mouseover', () => {
-    dropDown.classList.add('show');
+    pageDrop.forEach(page => {
+        page.classList.add('show');
+
+        page.addEventListener('mouseover', () => {
+            page.classList.add('show');
+        })
+    })
 })
 
-dropDown.addEventListener('mouseover', () => {
-    dropDown.classList.add('show');
+topBar.addEventListener('mouseleave', () => {
+    pageDrop.forEach(page => {
+        page.classList.remove('show');
+    })
 })
 
-dropDownBtn.addEventListener('mouseleave', () => {
-    dropDown.classList.toggle('show');
-})
 
-dropDown.addEventListener('mouseleave', () => {
-    dropDown.classList.toggle('show');
-})
-
-//ball animation
+//ball animation - statically rotating?
 const ball = document.querySelector('.ball');
 
 if (ball) {
