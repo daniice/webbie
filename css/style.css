@@ -22,10 +22,14 @@ body {
     flex-shrink: 0;
 }
 
-#topBar img {
-    min-width: 90px;
-    cursor: pointer;
-    opacity: 0;
+.topBarLine {
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transform-origin: center;
+}
+
+.topBarLine.isHover {
+    transform: rotate(90deg) scale(0.75);
 }
 
 .hide {
@@ -46,6 +50,7 @@ body {
     line-height: 60px;
     color: white;
     font-size: 20px;
+    transition-duration: 0.75s;
 }
 
 .pageDrop a {
@@ -112,9 +117,16 @@ body {
     /* first two scroll snap attributes for browser compatibility */
 }
 
-.galleryImgs img {
+.galleryImgs img, .galleryFirst img {
     max-width: 75vw;
     max-height: 75vh;
+}
+
+.galleryFirst {
+    scroll-snap-align: center;
+    align-self: center;
+    padding-top: calc((25vh - 120px)/2);
+    padding-bottom: 35px;
 }
 
 .galleryImgs {
@@ -154,11 +166,5 @@ body {
 .galleryImgsGroup4 img {
     max-width: 40vw;
     max-height: 40vh;
-}
-
-hr { 
-    width:100%; 
-    height:1px; 
-    background: #fff 
 }
 
