@@ -12,6 +12,9 @@
 //READ.me?
 //bundle all js files into one? Wrap sometimes unnecessary functions in if statements?
 
+//have each word post take up 1/3 if screen bigger than a certain size, otherwise condense - min-width - responsive to viewport size?
+//scroll to the left to access further posts - how to make it clickable too?
+
 //dropdown menu on hover, lines flip up 90
 const topBar = document.querySelector('#topBar');
 const dropDownBtn = document.querySelector('.topBarLine');
@@ -53,4 +56,19 @@ ball.addEventListener('click', () => {
     ball.classList.remove('isHover');
     ball.classList.add('onClick');
   })
+}
+
+//word page post expand to full screen when clicked
+const posts = Array.from(document.querySelectorAll('.post'));
+
+if (posts.length>0) {
+    posts.forEach(post => {
+        post.addEventListener('mouseover', () => {
+            //border wider, round at corners also?
+        })
+
+        post.addEventListener('click', () => {
+            //fixed location taking up full viewport - incl top/bottom bars? - arrow at top left to return
+        })
+    })
 }
