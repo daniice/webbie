@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danice Ball</title>
+    <title>Dani</title>
     <script src="./js/webbie.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
     <div id="topBar">
-        <div class="pageDrop hide"><a href="./images.html">Images</a></div>
-        <div class="pageDrop hide"><a href="./words.html">Words</a></div>
-        <div class="pageDrop hide"><a href="./about.html">About</a></div>
-        <svg class="topBarLine" height="60" width="90">
-            <line x1="25" y1="30" x2="65" y2="30" stroke="white" stroke-width="2" stroke-linecap="round" />
-        </svg>
+        <div id="ballLabel">BALL</div> 
+        <div id="menu">
+            <div class="pageDrop hide"><a href="./images.html">Images</a></div>
+            <div class="pageDrop hide"><a href="./words.html">Words</a></div>
+            <div class="pageDrop hide"><a href="./about.html">About</a></div>
+            <svg class="topBarLine" height="60" width="90">
+                <line x1="25" y1="30" x2="65" y2="30" stroke="white" stroke-width="2" stroke-linecap="round" />
+            </svg>
+        </div>
     </div> 
 
-    <svg class="ball" height="150" width="150">
-        <circle cx="75" cy="75" r="50" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.1)" />
-    </svg>
+    <div class="middleMain">
+        <svg class="ball" height="150" width="150">
+            <circle cx="75" cy="75" r="50" stroke="white" stroke-width="2" fill="rgba(255,255,255,0.1)" />
+        </svg>
+
+        <div class="welcomeBlurb hide">
+            <p>Hello, welcome to my wedge of the internet. Stay as long as you'd like.</p>
+            <p>See my art <a href="./images.html">here</a> and my writing <a href="./words.html">here</a>. And send me your thoughts <a href="./about.html">here</a>!</p>
+        </div>
+    </div>
 
     <div id="bottomBar"></div>
 

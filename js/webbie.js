@@ -1,19 +1,25 @@
-//set background as a photo of paint swooshes?
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality
-//allow option to select random writing piece
-//ball with light in direction of cursor and shadow opposite - Illustrator and export as svg
-//swirly lines/bounce?
-//"BALL" on ball or in corner?
+//book reports?
+//allow option to select random writing piece?
+//ball with light in direction of cursor and shadow opposite? swirly lines/bounce?
+//dood on ball, animation of skyline/mountains surrounding - Illustrator and export as svg
 //compatibility for ios/depreceated browsers - test - if (css.supports ...) {...}
 //github access change to SSH?
 //can you make svgs in accordance to vh/vw?
-//dropdown menu comes in from right of page?
-//box shadows?
+//box shadows? but inverse?
 //READ.me?
-//bundle all js files into one? Wrap sometimes unnecessary functions in if statements?
+//bundle all js files into one - wrap sometimes unnecessary functions in if statements
 
-//have each word post take up 1/3 if screen bigger than a certain size, otherwise condense - min-width - responsive to viewport size?
-//scroll to the left to access further posts - how to make it clickable too?
+//appear explanation of piece on hover - grey out image with words on top
+//filter options for all, paint, digital, pen, other (change?) - "all" button on left automatically pressed, others get rid of non-category - how to make consistent with design lang?
+//perfect the scrolling behavior with padding on very top
+//add grinchy, photoshop black in geo city, any others to add?
+//make images load with pursposeful delay like Anna's site
+//sign images/embed with transparent first layer?
+
+//thought entering box on about page
+//also info about venmo and collab and commission
+//add explanation of numbers once added
 
 //dropdown menu on hover, lines flip up 90
 const topBar = document.querySelector('#topBar');
@@ -41,34 +47,42 @@ topBar.addEventListener('mouseleave', () => {
 
 
 //ball animation - statically rotating?
+//event on click of ball?
 const ball = document.querySelector('.ball');
+const middleMain = document.querySelector('.middleMain');
+const welcomeBlurb = document.querySelector('.welcomeBlurb')
 
 if (ball) {
-ball.addEventListener('mouseover', () => {
+middleMain.addEventListener('mouseover', () => {
     ball.classList.add('isHover');
+    welcomeBlurb.classList.add('show');
   });
 
-ball.addEventListener('mouseleave', () => {
+middleMain.addEventListener('mouseleave', () => {
     ball.classList.toggle('isHover');
+    welcomeBlurb.classList.remove('show');
 })
-
-ball.addEventListener('click', () => {
-    ball.classList.remove('isHover');
-    ball.classList.add('onClick');
-  })
 }
 
+
 //word page post expand to full screen when clicked
+//perfect sizing? and perfect border/padding on hover
+//different formatting for poems than writings? 1pt
 const posts = Array.from(document.querySelectorAll('.post'));
 
 if (posts.length>0) {
     posts.forEach(post => {
         post.addEventListener('mouseover', () => {
-            //border wider, round at corners also?
+            post.classList.add('isHover');
+        })
+
+        post.addEventListener('mouseleave', () => {
+            post.classList.toggle('isHover');
         })
 
         post.addEventListener('click', () => {
-            //fixed location taking up full viewport - incl top/bottom bars? - arrow at top left to return
+            //arrow at top left to return?
+            post.requestFullscreen();
         })
     })
 }
