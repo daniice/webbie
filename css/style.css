@@ -230,7 +230,7 @@ img {
     box-sizing: border-box;
     border: 1px solid white;
     border-radius: 4px;
-    background-color: rgb(252, 244, 185);
+    background-color: rgb(252, 225, 180);
     overflow: scroll;
     scroll-snap-align: center;
     transition-property: transform;
@@ -278,14 +278,58 @@ p.p2 {
     color: white;
 }
 
-#thoughts {
-    margin-left: 25vw;
-    width: 50vw;
+.thoughts {
+    color: white;
+    font-size: 14px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-bottom: 50px;
+    padding-right: 8px;
+    padding-left: 8px;
+    padding-bottom: 12px;
+    border: solid 2px white;
+    border-radius: 8px;
+}
+
+.thoughts a {
+    color: white;
+}
+
+#thoughtEntry {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+#visitorThoughts {
+    width: calc(100vw - 290px);
     background-color: grey;
     height: 50px;
     border-radius: 8px;
     border: solid 2px white;
     color: white;
     font-family: 'Marcellus', serif;
+    padding-left: 8px;
+    box-sizing: border-box;
 }
+
+#thoughtEntryButton {
+    height: 50px;
+    border-radius: 8px;
+    border: solid 2px white;
+    width: 60px;
+    align-self: center;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: white;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: white;
+  }

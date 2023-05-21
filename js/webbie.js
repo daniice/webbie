@@ -17,9 +17,11 @@
 //make images load with pursposeful delay like Anna's site
 //sign images/embed with transparent first layer?
 
-//thought entering box on about page
 //also info about venmo and collab and commission
 //add explanation of numbers once added
+//why photo not justifying with space-between?
+//support via donation?
+//link to places of work? State names?
 
 //dropdown menu on hover, lines flip up 90
 const topBar = document.querySelector('#topBar');
@@ -86,3 +88,17 @@ if (posts.length>0) {
         })
     })
 }
+
+
+//about page thought entry
+const form = document.querySelector('#thoughtEntry');
+const formData = new Array;
+
+if (form) {
+form.addEventListener('submit', (event) => {
+    event.preventDefault;
+    if (form.elements["visitorThoughts"].value.trim() != "") {
+        form.submit();
+        formData.push(form.elements["visitorThoughts"].value);
+    }
+})}
