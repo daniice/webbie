@@ -1,15 +1,19 @@
-//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality
+//GENERAL
+//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments
 //book reports?
-//allow option to select random writing piece?
-//ball with light in direction of cursor and shadow opposite? swirly lines/bounce?
-//dood on ball, animation of skyline/mountains surrounding - Illustrator and export as svg
+//READ.me?
+//all js files bundled as one - wrap sometimes unnecessary functions in if statements - until need to collect data
 //compatibility for ios/depreceated browsers - test - if (css.supports ...) {...}
 //github access change to SSH?
-//can you make svgs in accordance to vh/vw?
-//box shadows? but inverse?
-//READ.me?
-//bundle all js files into one - wrap sometimes unnecessary functions in if statements
 
+//HOMEPAGE
+//dood on ball, animation of skyline/mountains surrounding, static rotation - Illustrator and export as svg
+//can you make svgs in accordance to vh/vw?
+//box shadows? but light?
+//ball with light in direction of cursor and shadow opposite? swirly lines/bounce?
+//event on click of ball?
+
+//IMAGES
 //appear explanation of piece on hover - grey out image with words on top
 //filter options for all, paint, digital, pen, other (change?) - "all" button on left automatically pressed, others get rid of non-category - how to make consistent with design lang?
 //perfect the scrolling behavior with padding on very top
@@ -17,11 +21,17 @@
 //make images load with pursposeful delay like Anna's site
 //sign images/embed with transparent first layer?
 
-//also info about venmo and collab and commission
+//WORDS
+//allow option to select random writing piece?
+//perfect sizing? and perfect border/padding on hover
+//arrow on side disappear when at end, add arrow to left once not at first, arrow at top to return to words page?
+
+//ABOUT
 //add explanation of numbers once added
 //why photo not justifying with space-between?
 //support via donation?
-//link to places of work? State names?
+//link to places of work? Say names/explanations?
+//handle form data via google forms for now - AJAX form handling?, do backend (Python, flask) once understand security implications - add recaptcha verification?
 
 //dropdown menu on hover, lines flip up 90
 const topBar = document.querySelector('#topBar');
@@ -48,8 +58,7 @@ topBar.addEventListener('mouseleave', () => {
 })
 
 
-//ball animation - statically rotating?
-//event on click of ball?
+//ball animation
 const ball = document.querySelector('.ball');
 const middleMain = document.querySelector('.middleMain');
 const welcomeBlurb = document.querySelector('.welcomeBlurb')
@@ -67,9 +76,7 @@ middleMain.addEventListener('mouseleave', () => {
 }
 
 
-//word page post expand to full screen when clicked
-//perfect sizing? and perfect border/padding on hover
-//different formatting for poems than writings? 1pt
+//word page post expand to full screen when clicked, scroll further when arrow is clicked
 const posts = Array.from(document.querySelectorAll('.post'));
 
 if (posts.length>0) {
@@ -83,8 +90,20 @@ if (posts.length>0) {
         })
 
         post.addEventListener('click', () => {
-            //arrow at top left to return?
             post.requestFullscreen();
+        })
+    })
+}
+
+const sideArrow = document.querySelector('#sideArrow');
+const postContainer = document.querySelector('.postContainer');
+
+if (sideArrow) {
+    sideArrow.addEventListener('click', () => {
+        postContainer.scrollBy({
+            top: 0,
+            left: 300,
+            behavior : "smooth"
         })
     })
 }
@@ -92,13 +111,9 @@ if (posts.length>0) {
 
 //about page thought entry
 const form = document.querySelector('#thoughtEntry');
-const formData = new Array;
-
-if (form) {
-form.addEventListener('submit', (event) => {
-    event.preventDefault;
-    if (form.elements["visitorThoughts"].value.trim() != "") {
-        form.submit();
-        formData.push(form.elements["visitorThoughts"].value);
-    }
-})}
+if (form) (
+    form.addEventListener('submit', () => {
+        console.log(submitted);
+        location.reload();
+    })
+)

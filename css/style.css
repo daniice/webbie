@@ -215,10 +215,13 @@ img {
     box-sizing: border-box;
     gap: 16px;
     padding: 16px;
-    overflow: scroll;
+    overflow-x: scroll;
     scroll-snap-type: mandatory;
     scroll-snap-points-x: repeat(100vh);  
     scroll-snap-type: x mandatory;
+    transition-property: transform;
+    transition-duration: 0.3s;
+    transform-origin: center;
 }
 
 .post {
@@ -230,12 +233,9 @@ img {
     box-sizing: border-box;
     border: 1px solid white;
     border-radius: 4px;
-    background-color: rgb(252, 225, 180);
+    background-color: rgb(240, 215, 180);
     overflow: scroll;
     scroll-snap-align: center;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transform-origin: center;
 }
 
 .post.isHover {
@@ -253,6 +253,23 @@ p.p2 {
     font-size: 12px;
     color: black;
     min-height: 12.0px;
+}
+
+#sideArrow {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    border-radius: 8px;
+    padding: 8px;
+    position: fixed;
+    top: 45vh;
+    left: 91vw;
+    min-width: 50px;
+}
+
+#sideArrow:hover {
+    cursor: pointer;
 }
 
 
@@ -326,10 +343,10 @@ p.p2 {
     opacity: 1; /* Firefox */
   }
   
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
     color: white;
   }
   
-  ::-ms-input-placeholder { /* Microsoft Edge */
+::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
   }
