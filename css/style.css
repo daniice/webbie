@@ -122,7 +122,7 @@ body {
     height: 100px;
     text-align: center;
     text-justify: center;
-    top: 44%;
+    top: 42%;
     left: 50%;
     margin-top: -50px; 
     /* Negative half of height. */
@@ -219,9 +219,6 @@ img {
     scroll-snap-type: mandatory;
     scroll-snap-points-x: repeat(100vh);  
     scroll-snap-type: x mandatory;
-    transition-property: transform;
-    transition-duration: 0.3s;
-    transform-origin: center;
 }
 
 .post {
@@ -255,7 +252,13 @@ p.p2 {
     min-height: 12.0px;
 }
 
-#sideArrow {
+p.p3 {
+    font-size: 12px;
+    color: black;
+    text-align: center;
+}
+
+#sideArrowRight {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     font-family: 'Courier New', Courier, monospace;
@@ -268,7 +271,20 @@ p.p2 {
     min-width: 50px;
 }
 
-#sideArrow:hover {
+#sideArrowLeft {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    border-radius: 8px;
+    padding: 8px;
+    position: fixed;
+    top: 45vh;
+    left: 3vw;
+    min-width: 50px;
+}
+
+#sideArrowRight:hover, #sideArrowLeft:hover {
     cursor: pointer;
 }
 

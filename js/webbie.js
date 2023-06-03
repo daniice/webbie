@@ -6,12 +6,14 @@
 //compatibility for ios/depreceated browsers - test - if (css.supports ...) {...}
 //github access change to SSH?
 
-//HOMEPAGE
+//HOMEPAGE - get homepage up to snuff, then launchable!!
 //dood on ball, animation of skyline/mountains surrounding, static rotation - Illustrator and export as svg
 //can you make svgs in accordance to vh/vw?
 //box shadows? but light?
 //ball with light in direction of cursor and shadow opposite? swirly lines/bounce?
 //event on click of ball?
+//top Ball link to homepage
+//better position blurb
 
 //IMAGES
 //appear explanation of piece on hover - grey out image with words on top
@@ -24,7 +26,8 @@
 //WORDS
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover
-//arrow on side disappear when at end, add arrow to left once not at first, arrow at top to return to words page?
+//add explanation blurb at front
+//perfect arrows disappear, arrow at top to return to words page?
 
 //ABOUT
 //add explanation of numbers once added
@@ -95,17 +98,36 @@ if (posts.length>0) {
     })
 }
 
-const sideArrow = document.querySelector('#sideArrow');
+const sideArrowRight = document.querySelector('#sideArrowRight');
+const sideArrowLeft = document.querySelector('#sideArrowLeft');
 const postContainer = document.querySelector('.postContainer');
 
-if (sideArrow) {
-    sideArrow.addEventListener('click', () => {
+if (sideArrowRight) {
+    sideArrowLeft.classList.add('hide');
+    sideArrowRight.addEventListener('click', () => {
+        const scrollPercent = 100 * (postContainer.scrollLeft + 300) / (postContainer.scrollWidth-postContainer.clientWidth);
         postContainer.scrollBy({
             top: 0,
             left: 300,
             behavior : "smooth"
         })
-    })
+        sideArrowLeft.classList.remove('hide');
+        if (scrollPercent > 70) sideArrowRight.classList.add('hide');
+        })
+}
+
+if (sideArrowLeft) {
+        sideArrowLeft.addEventListener('click', () => {
+            if (sideArrowRight.classList.contains('hide')) sideArrowRight.classList.remove('hide');
+            const scrollPercent = 100 * (postContainer.scrollLeft) / (postContainer.scrollWidth-postContainer.clientWidth);
+            console.log(scrollPercent);
+            if (scrollPercent < 35) sideArrowLeft.classList.add('hide');
+            postContainer.scrollBy({
+                top: 0,
+                left: -300,
+                behavior : "smooth"
+            })
+        })
 }
 
 
