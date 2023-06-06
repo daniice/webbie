@@ -7,13 +7,12 @@
 //github access change to SSH?
 
 //HOMEPAGE - get homepage up to snuff, then launchable!!
-//dood on ball, animation of skyline/mountains surrounding, static rotation - Illustrator and export as svg
+//dood on ball, animation of skyline/mountains surrounding - Illustrator and export as svg
 //can you make svgs in accordance to vh/vw?
 //box shadows? but light?
-//ball with light in direction of cursor and shadow opposite? swirly lines/bounce?
+//ball with light in direction of cursor and shadow opposite? swirly lines/bounce? static rotation?
 //event on click of ball?
-//top Ball link to homepage
-//better position blurb
+//blurb as part of SVG?
 
 //IMAGES
 //appear explanation of piece on hover - grey out image with words on top
@@ -27,9 +26,10 @@
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover
 //add explanation blurb at front
-//perfect arrows disappear, arrow at top to return to words page?
+//perfect arrows disappear - how to work with scroll interaction?, arrow at top to return to words page?
 
 //ABOUT
+//different photo?
 //add explanation of numbers once added
 //why photo not justifying with space-between?
 //support via donation?
