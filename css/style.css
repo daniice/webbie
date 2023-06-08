@@ -117,18 +117,35 @@ body {
     transform: scale(1.5);
 }
 
-.ball.onClick {
-    transform: scale(0.5);
+.cls-4 {
+    stroke: rgb(24, 159, 82);
+    stroke-width: 7px;
+}
+
+.cls-4 {
+    stroke-dasharray: 750;
+    stroke-dashoffset: 0;
+    animation: dash 30s linear alternate infinite;
+  }
+  
+  @keyframes dash {
+    from {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 750;
+    }
+    to {
+      stroke-dashoffset: 750;
+      stroke-dasharray: 4000;
+    }
 }
 
 .welcomeBlurb {
     position: fixed;
     width: 100px;
     height: 100px;
-    text-align: center;
-    text-justify: center;
-    top: 47%;
-    left: 50%;
+    text-align: right;
+    top: 50vh;
+    left: 50vw;
     margin-top: -50px; 
     /* Negative half of height. */
     margin-left: -50px;
@@ -298,7 +315,7 @@ p.p3 {
 .aboutMeImg {
     width: 50vw;
     align-self: center;
-    margin-top: 50px;
+    margin-top: 40px;
     border: solid 2px white;
 }
 

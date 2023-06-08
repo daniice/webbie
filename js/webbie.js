@@ -1,3 +1,5 @@
+//LAUNCH!!!
+
 //GENERAL
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments
 //book reports?
@@ -6,13 +8,13 @@
 //compatibility for ios/depreceated browsers - test - if (css.supports ...) {...}
 //github access change to SSH?
 
-//HOMEPAGE - get homepage up to snuff, then launchable!!
-//dood on ball, animation of skyline/mountains surrounding - Illustrator and export as svg
-//can you make svgs in accordance to vh/vw?
-//box shadows? but light?
-//ball with light in direction of cursor and shadow opposite? swirly lines/bounce? static rotation?
-//event on click of ball?
-//blurb as part of SVG?
+//HOMEPAGE
+//ghost black lines over hand
+//should translate= be the same on all paths?
+//only one path?
+//line of ball morphing into skyline
+//event on click of ball? rotate360?
+//ball with light in direction of cursor and shadow opposite? swirly lines/bounce? static rotation? box shadows w white?
 
 //IMAGES
 //appear explanation of piece on hover - grey out image with words on top
@@ -29,7 +31,6 @@
 //perfect arrows disappear - how to work with scroll interaction?, arrow at top to return to words page?
 
 //ABOUT
-//different photo?
 //add explanation of numbers once added
 //why photo not justifying with space-between?
 //support via donation?
