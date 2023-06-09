@@ -1,18 +1,17 @@
 //LAUNCH!!!
 
 //GENERAL
+//compatibility for mobile/depreceated browsers - test - if (css.supports ...) {...}
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments
 //book reports?
 //READ.me?
-//all js files bundled as one - wrap sometimes unnecessary functions in if statements - until need to collect data
-//compatibility for ios/depreceated browsers - test - if (css.supports ...) {...}
+//most js functions bundled in one file - wrap sometimes unnecessary functions in if statements - until need to collect data
 //github access change to SSH?
 
 //HOMEPAGE
 //ghost black lines over hand
 //should translate= be the same on all paths?
-//only one path?
-//line of ball morphing into skyline
+//only one path? line of ball morphing into skyline?
 //event on click of ball? rotate360?
 //ball with light in direction of cursor and shadow opposite? swirly lines/bounce? static rotation? box shadows w white?
 
@@ -27,7 +26,7 @@
 //WORDS
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover
-//add explanation blurb at front
+//add explanation blurb at front?
 //perfect arrows disappear - how to work with scroll interaction?, arrow at top to return to words page?
 
 //ABOUT
@@ -35,7 +34,7 @@
 //why photo not justifying with space-between?
 //support via donation?
 //link to places of work? Say names/explanations?
-//handle form data via google forms for now - AJAX form handling?, do backend (Python, flask) once understand security implications - add recaptcha verification?
+//handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 
 //dropdown menu on hover, lines flip up 90
 const topBar = document.querySelector('#topBar');
@@ -130,13 +129,3 @@ if (sideArrowLeft) {
             })
         })
 }
-
-
-//about page thought entry
-const form = document.querySelector('#thoughtEntry');
-if (form) (
-    form.addEventListener('submit', () => {
-        console.log(submitted);
-        location.reload();
-    })
-)

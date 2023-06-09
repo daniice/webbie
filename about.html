@@ -31,18 +31,22 @@
     </div>
 
     <div class="thoughts">
-        <p>Please leave me any thoughts you may have below, especially with regards to collaboration and commission. I sell prints of almost all of the work you see here, upon request. And drop your email for occassional updates!</p>
-        <form action="https://script.google.com/macros/s/AKfycby2KmOQBhuFc--R1Pj0jcRP5Sfr3OYwPuD1hCFLC8ZpBKMETrNHT7qGL6__pNB0yWi_/exec" method="post" class="gform" id="thoughtEntry">
-            <div class="field">
+        <p>Send me your thoughts below, especially with regards to collaboration and commission. I sell prints of almost all of the work you see here, upon request. And drop your email for occassional updates!</p>
+        <form action="https://script.google.com/macros/s/AKfycbyfg-nMtQmIrkhVrMIVBFGGAyJ23Y7GBB-PzJse7SrEpjgSKzhU1TbRDZXNkkeEra2e/exec" method="post" class="gform" id="thoughtEntry">
+            <div class="field form-elements">
                 <input type="text" id="visitorThoughts" name="visitorThoughts" placeholder="Type thoughts here!" />
             </div>
-            <div class="field">
+            <div class="field form-elements">
                 <button type="submit" id="thoughtEntryButton">=></button>
+            </div>
+            <div style="display:none" class="thankyou_message">
+                <p>Thankya!</p>
             </div>
         </form>
     </div>
 
     <div id="bottomBar"></div>
 
+    <script data-cfasync="false" type="text/javascript" src="js/formHandler.js"></script>
 </body>
 </html>
