@@ -1,6 +1,7 @@
 //LAUNCH!!!
 
 //GENERAL
+//get rid of redundant noMobile checks
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments
 //book reports?
 //write more!
@@ -178,3 +179,6 @@ else aboutMeImg.classList.add('noMobile');
 let aboutText = document.querySelector('.aboutText');
 if (check === true && aboutText) aboutText.classList.add('mobile');
 else aboutText.classList.add('noMobile');
+
+let thoughts = document.querySelector('.thoughts');
+if (check === true && thoughts) thoughts.classList.add('mobile');

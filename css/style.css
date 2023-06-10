@@ -357,7 +357,7 @@ p.p3 {
 }
 
 .aboutText.mobile {
-    font-size: 10px;
+    font-size: 11px;
 }
 
 .aboutText a {
@@ -375,6 +375,10 @@ p.p3 {
     padding-bottom: 12px;
     border: solid 2px white;
     border-radius: 8px;
+}
+
+.thoughts.mobile {
+    font-size: 11px;
 }
 
 .thoughts a {
