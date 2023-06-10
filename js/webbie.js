@@ -1,10 +1,10 @@
 //LAUNCH!!!
 
 //GENERAL
-//compatibility for mobile/depreceated browsers - test - if (css.supports ...) {...}
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments
 //book reports?
 //write more!
+//compatibility for mobile/depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
 //js for analytics?
 //copyrights?
 //READ.me?
@@ -12,6 +12,7 @@
 //github access change to SSH?
 
 //HOMEPAGE
+//signature on home page below animation
 //ghost black lines over hand
 //should translate= be the same on all paths?
 //only one path? line of ball morphing into skyline?
