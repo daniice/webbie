@@ -20,6 +20,7 @@ body {
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.1);
     flex-shrink: 0;
+    margin-right: 5vw;
 }
 
 #menu {
@@ -80,7 +81,7 @@ body {
 
 .pageDrop.noMobile {
     font-size: 20px;
-    width: 10vw;
+    width: 90px;
 }
 
 .pageDrop.mobile {
