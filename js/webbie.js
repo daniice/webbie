@@ -121,7 +121,7 @@ const posts = Array.from(document.querySelectorAll('.post'));
 
 if (posts.length>0) {
     posts.forEach(post => {
-        if (check === true) {
+        if (check === false) {
             post.addEventListener('mouseover', () => {
             post.classList.add('isHover');
         })
