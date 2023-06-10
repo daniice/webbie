@@ -2,6 +2,7 @@
 
 //GENERAL
 //get rid of redundant noMobile checks
+//width of word posts on mobile?
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments
 //book reports?
 //write more!
