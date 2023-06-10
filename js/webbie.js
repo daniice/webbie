@@ -55,7 +55,7 @@ const dropDownBtn = document.querySelector('.topBarLine');
 const pageDrop = Array.from(document.getElementsByClassName('pageDrop'));
 
 if (check === true) {
-    dropDownBtn.classList.add('hide');
+    dropDownBtn.remove();
     pageDrop.forEach(page => {
         page.classList.add('show');
         page.classList.add('mobile');
