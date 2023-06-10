@@ -168,3 +168,13 @@ if (sideArrowLeft) {
             })
         })
 }
+
+
+//about page check for mobile 
+let aboutMeImg = document.querySelector('.aboutMeImg');
+if (check === true && aboutMeImg) aboutMeImg.classList.add('mobile');
+else aboutMeImg.classList.add('noMobile');
+
+let aboutText = document.querySelector('.aboutText');
+if (check === true && aboutText) aboutText.classList.add('mobile');
+else aboutText.classList.add('noMobile');

@@ -329,8 +329,15 @@ p.p3 {
 
 
 /* about page */
-.aboutMeImg {
+.aboutMeImg.noMobile {
     width: 50vw;
+    align-self: center;
+    margin-top: 40px;
+    border: solid 2px white;
+}
+
+.aboutMeImg.mobile {
+    width: 75vw;
     align-self: center;
     margin-top: 40px;
     border: solid 2px white;
@@ -339,11 +346,18 @@ p.p3 {
 .aboutText {
     align-self: center;
     color: white;
-    font-size: 14px;
     padding-left: 8vw;
     padding-right: 8vw;
     padding-bottom: 25px;
     padding-top: 25px;
+}
+
+.aboutText.noMobile {
+    font-size: 14px;
+}
+
+.aboutText.mobile {
+    font-size: 10px;
 }
 
 .aboutText a {
