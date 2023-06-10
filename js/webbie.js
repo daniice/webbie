@@ -65,6 +65,7 @@ if (window.mobileCheck === true) {
 else {
 dropDownBtn.addEventListener('mouseover', () => {
     pageDrop.forEach(page => {
+        page.classList.add('noMobile');
         page.classList.add('show');
 
         page.addEventListener('mouseover', () => {
@@ -109,6 +110,8 @@ if (window.mobileCheck === true) {
     const gallery = document.querySelector('.gallery');
     if (gallery) gallery.classList.add('mobile')
 }
+
+else gallery.classList.add('noMobile');
 
 
 //word page post expand to full screen when clicked, scroll further when arrow is clicked
