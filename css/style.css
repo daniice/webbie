@@ -329,18 +329,20 @@ p.p3 {
 
 
 /* about page */
-.aboutMeImg.noMobile {
-    width: 50vw;
+.aboutMeImg {
     align-self: center;
     margin-top: 40px;
     border: solid 2px white;
+    width: 50vw;
+}
+
+/* why not reading? */
+.aboutMeImg.noMobile {
+    width: 50vw;
 }
 
 .aboutMeImg.mobile {
     width: 75vw;
-    align-self: center;
-    margin-top: 40px;
-    border: solid 2px white;
 }
 
 .aboutText {
@@ -366,7 +368,6 @@ p.p3 {
 
 .thoughts {
     color: white;
-    font-size: 14px;
     margin-left: 8vw;
     margin-right: 8vw;
     margin-bottom: 50px;
@@ -375,6 +376,10 @@ p.p3 {
     padding-bottom: 12px;
     border: solid 2px white;
     border-radius: 8px;
+}
+
+.thoughts.noMobile {
+    font-size: 14px;
 }
 
 .thoughts.mobile {

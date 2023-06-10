@@ -183,3 +183,4 @@ else aboutText.classList.add('noMobile');
 
 let thoughts = document.querySelector('.thoughts');
 if (check === true && thoughts) thoughts.classList.add('mobile');
+else thoughts.classList.add('noMobile');
