@@ -121,13 +121,15 @@ const posts = Array.from(document.querySelectorAll('.post'));
 
 if (posts.length>0) {
     posts.forEach(post => {
-        post.addEventListener('mouseover', () => {
+        if (check === true) {
+            post.addEventListener('mouseover', () => {
             post.classList.add('isHover');
         })
 
         post.addEventListener('mouseleave', () => {
             post.classList.toggle('isHover');
         })
+    }
 
         post.addEventListener('click', () => {
             post.requestFullscreen();
