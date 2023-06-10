@@ -59,6 +59,7 @@ if (window.mobileCheck === true) {
         page.classList.add('show');
         page.classList.add('mobile');
     })
+    dropDownBtn.classList.add('hide');
 }
 
 else {
