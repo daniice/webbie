@@ -6,6 +6,7 @@
 //book reports?
 //write more!
 //js for analytics?
+//copyrights?
 //READ.me?
 //most js functions bundled in one file - wrap sometimes unnecessary functions in if statements - until need to collect data
 //github access change to SSH?
@@ -56,6 +57,7 @@ const pageDrop = Array.from(document.getElementsByClassName('pageDrop'));
 if (window.mobileCheck === true) {
     pageDrop.forEach(page => {
         page.classList.add('show');
+        page.classList.add('mobile');
     })
 }
 
@@ -98,6 +100,13 @@ middleMain.addEventListener('mouseleave', () => {
     welcomeBlurb.classList.remove('show');
 })
 }
+}
+
+
+//image page scroll set to none when mobile
+if (window.mobileCheck === true) {
+    const gallery = document.querySelector('.gallery');
+    if (gallery) gallery.classList.add('mobile')
 }
 
 

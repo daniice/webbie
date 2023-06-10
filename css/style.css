@@ -80,6 +80,10 @@ body {
     height: 100%;
 }
 
+.pageDrop.mobile {
+    font-size: 12px;
+}
+
 .pageDrop:hover {
     background-color: white;
     color: black;
@@ -173,6 +177,10 @@ body {
     scroll-snap-points-y: repeat(100vh);  
     scroll-snap-type: y mandatory;
     /* first two scroll snap attributes for browser compatibility */
+}
+
+.gallery.mobile {
+    scroll-snap-type: none;
 }
 
 img {
@@ -323,8 +331,8 @@ p.p3 {
     align-self: center;
     color: white;
     font-size: 14px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 8vw;
+    padding-right: 8vw;
     padding-bottom: 25px;
     padding-top: 25px;
 }
@@ -336,8 +344,8 @@ p.p3 {
 .thoughts {
     color: white;
     font-size: 14px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 8vw;
+    margin-right: 8vw;
     margin-bottom: 50px;
     padding-right: 8px;
     padding-left: 8px;
@@ -357,7 +365,7 @@ p.p3 {
 }
 
 #visitorThoughts {
-    width: calc(100vw - 290px);
+    width: calc(84vw - 90px);
     background-color: grey;
     height: 50px;
     border-radius: 8px;
