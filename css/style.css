@@ -9,6 +9,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     font-family: 'Marcellus', serif;
+    overflow-x: hidden;
 }
 
 #topBar {
@@ -49,6 +50,7 @@ body {
 
 .topBarLine.isHover {
     transform: rotate(90deg) scale(0.75);
+    cursor: pointer;
 }
 
 .hide {
@@ -118,12 +120,12 @@ body {
     align-self: center;
     cursor: pointer;
     transition-property: transform;
-    transition-duration: 0.3s;
+    transition-duration: 10s;
     transform-origin: center;
 }
 
 .ball.isHover {
-    transform: scale(1.5);
+    transform: scale(1.5) rotate(360deg);
 }
 
 .cls-4 {
@@ -156,7 +158,7 @@ body {
     top: 50vh;
     left: 50vw;
     margin-top: -50px; 
-    /* Negative half of height. */
+    /* Negative half of height ..? */
     margin-left: -50px;
     color: white;
     font-size: 10px;
@@ -336,7 +338,6 @@ p.p3 {
     width: 50vw;
 }
 
-/* why not reading? */
 .aboutMeImg.noMobile {
     width: 50vw;
 }
@@ -352,14 +353,15 @@ p.p3 {
     padding-right: 8vw;
     padding-bottom: 25px;
     padding-top: 25px;
-}
-
-.aboutText.noMobile {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .aboutText.mobile {
     font-size: 11px;
+}
+
+.aboutText.noMobile {
+    font-size: 13px;
 }
 
 .aboutText a {
@@ -376,10 +378,11 @@ p.p3 {
     padding-bottom: 12px;
     border: solid 2px white;
     border-radius: 8px;
+    font-size: 13px;
 }
 
 .thoughts.noMobile {
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .thoughts.mobile {
@@ -412,8 +415,14 @@ p.p3 {
     height: 50px;
     border-radius: 8px;
     border: solid 2px white;
+    color: white;
+    background-color: grey;
     width: 60px;
     align-self: center;
+}
+
+#thoughtEntryButton:hover {
+    cursor: pointer;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

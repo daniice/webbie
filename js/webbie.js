@@ -1,9 +1,6 @@
-//LAUNCH!!!
-
 //GENERAL
 //get rid of redundant noMobile checks
-//width of word posts on mobile?
-//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments
+//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments, climate tech funding
 //book reports?
 //write more!
 //compatibility for mobile/depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
@@ -30,18 +27,20 @@
 //sign images/embed with transparent first layer?
 
 //WORDS
-//need arrows?
+//add essays from school?
 //allow option to select random writing piece?
-//perfect sizing? and perfect border/padding on hover
-//add explanation blurb at front?
-//perfect arrows disappear - how to work with scroll interaction?, arrow at top to return to words page?
+//perfect sizing? and perfect border/padding on hover?
+//need arrows disappear? - how to work with scroll interaction?, arrow at top to return to words page?
 
 //ABOUT
 //add explanation of numbers once added
+//artists statement expand upon - harmony? change/make consistent with portfolio?
 //why photo not justifying with space-between?
+//why noMobile classes not reading in css?
 //support via donation?
 //link to places of work? Say names/explanations?
 //handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
+//don't handle empty forms?
 
 
 //check for mobile for compatibility changes
@@ -96,13 +95,13 @@ const welcomeBlurb = document.querySelector('.welcomeBlurb')
 if (check === false) {
     if (ball) {
     middleMain.addEventListener('mouseover', () => {
-    ball.classList.add('isHover');
-    welcomeBlurb.classList.add('show');
+        ball.classList.add('isHover');
+        welcomeBlurb.classList.add('show');
   });
 
-middleMain.addEventListener('mouseleave', () => {
-    ball.classList.toggle('isHover');
-    welcomeBlurb.classList.remove('show');
+    middleMain.addEventListener('mouseleave', () => {
+        ball.classList.toggle('isHover');
+        welcomeBlurb.classList.remove('show');
 })
 }
 }
@@ -138,6 +137,9 @@ if (posts.length>0) {
         })
     })
 }
+
+let post1 = document.querySelector('.post1');
+if (check === true) post1.setHTML('Swipe →');
 
 const sideArrowRight = document.querySelector('#sideArrowRight');
 const sideArrowLeft = document.querySelector('#sideArrowLeft');
