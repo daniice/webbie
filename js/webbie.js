@@ -7,15 +7,14 @@
 //js for analytics?
 //copyrights?
 //READ.me?
-//most js functions bundled in one file - wrap sometimes unnecessary functions in if statements - until need to collect data
 //github access change to SSH?
 
 //HOMEPAGE
 //signature on home page below animation
+//event on click of ball? rotate360? save until can develop stacked animations?
 //ghost black lines over hand
 //should translate= be the same on all paths?
 //only one path? line of ball morphing into skyline?
-//event on click of ball? rotate360?
 //ball with light in direction of cursor and shadow opposite? swirly lines/bounce? static rotation? box shadows w white?
 
 //IMAGES
@@ -27,10 +26,11 @@
 //sign images/embed with transparent first layer?
 
 //WORDS
+//"swipe" not working on phone?
 //add essays from school?
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
-//need arrows disappear? - how to work with scroll interaction?, arrow at top to return to words page?
+//need arrows disappear? - how to work with scroll interaction?, arrow at top when zoomed to return to words page?
 
 //ABOUT
 //add explanation of numbers once added

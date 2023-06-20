@@ -120,12 +120,12 @@ body {
     align-self: center;
     cursor: pointer;
     transition-property: transform;
-    transition-duration: 10s;
+    transition-duration: 3s;
     transform-origin: center;
 }
 
 .ball.isHover {
-    transform: scale(1.5) rotate(360deg);
+    transform: scale(1.5);
 }
 
 .cls-4 {
