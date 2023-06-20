@@ -437,3 +437,25 @@ p.p3 {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: white;
   }
+
+
+/* numbers page */
+#numbersContainer {
+    display: flex;
+    justify-content: center;
+}
+
+#numbersLinksContainer {
+    display: flex;
+    align-self: center;
+    flex-direction: horizontal;
+    justify-content: center;
+    gap: 16px;
+}
+
+.numberLink {
+    border: 1px solid white;
+    border-radius: 4px;
+    max-width: 25vw;
+    max-height: 25vh;
+}

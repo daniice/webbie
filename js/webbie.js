@@ -1,4 +1,5 @@
 //GENERAL
+//get ride of home choice in drop down as left corner does same thing
 //get rid of redundant noMobile checks
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments, climate tech funding
 //book reports?
@@ -41,6 +42,15 @@
 //link to places of work? Say names/explanations?
 //handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 //don't handle empty forms?
+
+//NUMBERS
+//what layout - how to create square sizing if square - how to change for mobile
+//link within entire container
+//dropdowns within modules
+//FOR SOUNDTRACK
+//option to download entire thesis
+//show final sonifications, then intro, then methodology and graphics, then aspects of sonic experience
+//in future, widget to upload a dataset and have it sampled according to these choices
 
 
 //check for mobile for compatibility changes
