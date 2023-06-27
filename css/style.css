@@ -125,7 +125,7 @@ body {
 }
 
 .ball.isHover {
-    transform: scale(1.5);
+    transform: scale(1.33);
 }
 
 .cls-4 {

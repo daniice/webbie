@@ -1,6 +1,7 @@
 //GENERAL
 //get ride of home choice in drop down as left corner does same thing
 //get rid of redundant noMobile checks
+//make urls not have .html at the ends
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments, climate tech funding
 //book reports?
 //write more!
@@ -51,6 +52,7 @@
 //option to download entire thesis
 //show final sonifications, then intro, then methodology and graphics, then aspects of sonic experience
 //in future, widget to upload a dataset and have it sampled according to these choices
+//change full thesis uploaded to include new edits
 
 
 //check for mobile for compatibility changes
