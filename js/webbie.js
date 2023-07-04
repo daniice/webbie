@@ -1,6 +1,9 @@
 //GENERAL
 //get ride of home choice in drop down as left corner does same thing
-//get rid of redundant noMobile checks
+//give extra space to "numbers" or base space off of length of word
+//circle (with D?) at top left for pages within pages (sonification)
+//make pages (esp images) load quicker
+//get rid of redundant noMobile checks - add back in where were glitching - check with VCS
 //make urls not have .html at the ends
 //"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments, climate tech funding
 //book reports?
@@ -53,6 +56,7 @@
 //show final sonifications, then intro, then methodology and graphics, then aspects of sonic experience
 //in future, widget to upload a dataset and have it sampled according to these choices
 //change full thesis uploaded to include new edits
+//collapsed collapsibles stick to the bottom so that a reader can see all options
 
 
 //check for mobile for compatibility changes
@@ -126,8 +130,6 @@ if (check === true) {
     if (gallery) gallery.classList.add('mobile')
 }
 
-else gallery.classList.add('noMobile');
-
 
 //word page post expand to full screen when clicked, scroll further when arrow is clicked
 const posts = Array.from(document.querySelectorAll('.post'));
@@ -189,12 +191,23 @@ if (sideArrowLeft) {
 //about page check for mobile 
 let aboutMeImg = document.querySelector('.aboutMeImg');
 if (check === true && aboutMeImg) aboutMeImg.classList.add('mobile');
-else aboutMeImg.classList.add('noMobile');
 
 let aboutText = document.querySelector('.aboutText');
 if (check === true && aboutText) aboutText.classList.add('mobile');
-else aboutText.classList.add('noMobile');
 
 let thoughts = document.querySelector('.thoughts');
 if (check === true && thoughts) thoughts.classList.add('mobile');
-else thoughts.classList.add('noMobile');
+
+
+//sonification collapsibles
+let collapseButtons = Array.from(document.getElementsByClassName('collapseButton'));
+collapseButtons.forEach(butt => {
+    butt.addEventListener('click', () => {
+        console.log('hi');
+        let text = butt.nextElementSibling;
+        if (text.style.display === "block") {
+            text.style.display = "none";
+        } else {
+            text.style.display = "block";
+        }
+})})
