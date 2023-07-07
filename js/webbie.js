@@ -54,12 +54,13 @@
 //link within entire container
 //dropdowns within pagedrops
 //FOR SOUNDTRACK
+//data and code sources autoscroll into view all the time
 //line animation like dropdown on collapsibles
 //think how to make compatible with mobile
 //write as laid out in pages doc
 //in future, widget to upload a dataset and have it sampled according to these choices
 //change full thesis uploaded to include new edits
-//collapsed collapsibles stick to the bottom so that a reader can see all options
+//collapsed collapsibles stick to the bottom so that a reader can see all options?
 
 
 //check for mobile for compatibility changes

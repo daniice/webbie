@@ -107,6 +107,7 @@
             <div id="sonificationDeconstructedCollapse">
                 <button class="collapseButton">SONIFICATION, DECONSTRUCTED</button>
                 <div class="collapseText">
+                    <p class="p2"><br></p> 
                     <p class="p1" style="color: white; font-size: 18px; text-align: center">To Sonify:</p>
                     <p class="p1" style="color: white; font-size: 14px; text-align: center">1) Determine the data to be used and its temporality (i.e. monthly vs yearly datapoints).</p>
                     <p class="p1" style="color: white; font-size: 14px; text-align: center">2) Determine the minimum and maximum of the dataset. </p>
@@ -116,11 +117,38 @@
                     <p class="p1" style="color: white; font-size: 14px; text-align: center">6) Set the tempo. </p>
                     <p class="p1" style="color: white; font-size: 14px; text-align: center">7) Run the code, or match intermediary notes to whichever location between the high and low notes best corresponds to their relative proximity to the minimum and maximum. For example, if data were mapped over an octave, and the first data point was 7/8 of the maximum, it would be mapped to the note coming directly before the top of the octave.  </p>
                     <p class="p1" style="color: white; font-size: 14px; text-align: center">8) Combine the resulting audio file with other sonic and visual material. </p>
-                </div>
+                    <p class="p2"><br></p> 
+                    <p class="p2"><br></p> 
+                    <div id="keyboardGraphImgs">
+                        <img id="keyboardImg" src="./img/keyboard.png" alt="">
+                        <p class="p1" style="color: white; font-size: 12px; text-align: center; width: 50vw">The blue pathway maps the data over two notes, while the red pathway maps over eight. Notice that the yellow point, located at 1/8 of the maximum data value, and the orange point, located at 3/8 of the maximum data value, are mapped to the same note via the blue pathway, but not the red. The alternative pathways between E and Eb and A and Ab are determined by choice of tonality (major or minor tone). </p>
+                        <p class="p2"><br></p> 
+                        <img id="musicGraphImg" src="./img/musicGraph.png" alt="">
+                        <p class="p1" style="color: white; font-size: 12px; text-align: center; width: 50vw">This graphic shows numerical data twice plotted over a musical staff. The blue plot is stretched out over less notes vertically (one octave rather than three), diminishing the sonic variation in the numerical differences. The dots on the right hand side delineate the E and A flats, which would be played instead of the E and A naturals in a minor tonality.</p>
+                    </div>
+                    </div>
             </div>
             <div id="sonicExperienceCollapse">
                 <button class="collapseButton">ELEMENTS OF THE SONIC EXPERIENCE</button>
-                <p class="collapseText p1" style="color: white; font-size: 14px;">hi</p>
+                <div class="collapseText">
+                    <p class="p2"><br></p> 
+                    <p class="p1" style="color: white; font-size: 14px;">The sonic experience was deconstructed and studied using data from RCP 8.5. Use the tabs below to explore the differences that result from conveying the same data, but in different ways.</p>
+                    <div class="sonicTabs">
+                        <button></button>
+                        <div class="sonicTabText" id="temporalityTab">
+                            <p class="p1" style="color: white; font-size: 14px;"></p>
+                            <p class="p1" style="color: white; font-size: 14px;"></p>
+                            <div><iframe src="" frameborder="0"></iframe></div>
+                            <div><iframe src="" frameborder="0"></iframe></div>
+                        </div>
+                        <div class="sonicTabText" id="tonalityTab">
+
+                        </div>
+                        <div class="sonicTabText" id="mappingTab">
+
+                        </div>
+                    </div>
+                </div>
             </div>
             <div id="dataSourcesCollapse">
                 <button class="collapseButton">DATA AND CODE SOURCES</button>
