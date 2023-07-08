@@ -208,15 +208,37 @@ if (check === true && thoughts) thoughts.classList.add('mobile');
 else if (aboutMeImg) thoughts.classList.add('noMobile');
 
 
-//sonification collapsibles
+//sonification collapsibles and elements of sonic experience tabs
 let collapseButtons = Array.from(document.getElementsByClassName('collapseButton'));
-collapseButtons.forEach(butt => {
+if (collapseButtons.length > 0) {
+    collapseButtons.forEach(butt => {
     butt.addEventListener('click', () => {
-        console.log('hi');
         let text = butt.nextElementSibling;
         if (text.style.display === "block") {
             text.style.display = "none";
         } else {
             text.style.display = "block";
         }
-})})
+})})}
+
+let sonicButtons = Array.from(document.getElementsByClassName('sonicButton'));
+let sonicTabTexts = Array.from(document.getElementsByClassName('sonicTabText'));
+if (sonicButtons.length > 0) {
+        for (let i = 0; i < sonicButtons.length; i++) {
+        sonicButtons[i].addEventListener("click", () => {
+          for (let j = 0; j < sonicTabTexts.length; j++) {
+            sonicTabTexts[j].classList.remove("show");
+          }
+          sonicTabTexts[i].classList.add("show");
+          for (let k = 0; k < sonicButtons.length; k++) {
+            sonicButtons[k].classList.remove("clicked");
+          }
+          sonicButtons[i].classList.add("clicked");
+        });
+      }}
+  
+  
+  
+  
+  
+  
