@@ -14,7 +14,7 @@
 //copyrights?
 //READ.me?
 //github access change to SSH?
-//clean up styling and structure to use best coding practices - get rid of inline style, computer lang for apostrophes etc
+//clean up styling and structure to use best consistent coding practices - get rid of inline style, rename classes and ids, computer lang for apostrophes etc
 
 //HOMEPAGE
 //signature on home page below animation
@@ -52,12 +52,11 @@
 //NUMBERS
 //what layout - how to create square sizing if square - how to change for mobile
 //link within entire container
-//dropdowns within pagedrops
+//dropdowns within pagedrop
 //FOR SOUNDTRACK
 //data and code sources autoscroll into view all the time
-//line animation like dropdown on collapsibles
-//think how to make compatible with mobile
-//write as laid out in pages doc
+//line animation like dropdown on collapsibles - also animate pulldown
+//make compatible with mobile
 //in future, widget to upload a dataset and have it sampled according to these choices
 //change full thesis uploaded to include new edits
 //collapsed collapsibles stick to the bottom so that a reader can see all options?

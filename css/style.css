@@ -595,4 +595,14 @@ button {
 
 .sonicTabText.show {
     display: flex;
+    flex-direction: column;
+}
+
+.sonificationElementVideos {
+    display: flex;
+    gap: 25vw;
+}
+
+.sonificationElementVideo {
+    width: 100vw;
 }

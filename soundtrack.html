@@ -18,7 +18,7 @@
             <div class="pageDrop hide"><a href="./index.html">Home</a></div>
             <div class="pageDrop hide"><a href="./words.html">Words</a></div>
             <div class="pageDrop hide"><a href="./images.html">Images</a></div>
-            <div class="pageDrop hide"><a href="./images.html">Numbers</a></div>
+            <div class="pageDrop hide"><a href="./numbers.html">Numbers</a></div>
             <div class="pageDrop hide"><a href="./about.html">About</a></div>
             <svg class="topBarLine" height="60" width="90">
                 <line x1="25" y1="30" x2="65" y2="30" stroke="white" stroke-width="2" stroke-linecap="round" />
@@ -140,24 +140,29 @@
                             <button class="sonicButton">Mapping Range</button>
                         </div>
                         <div class="sonicTabText" id="temporalityTab">
-                            <p class="p1" style="color: white; font-size: 14px;">1</p>
-                            <p class="p1" style="color: white; font-size: 14px;"></p>
+                            <p class="p1" style="color: white; font-size: 14px;">Using datapoints at different time intervals causes long-term trends to sound different. In the case of temperature data, monthly data is made up of rapid seasonal fluctuation. For every year that passes, the temperatures have to include winter, as well as summer, values. This often causes the monthly data to sound more confusing than the yearly data, which is composed of the average of every twelve monthly values. Averaging takes away a listener’s ability to fully internalize the annual patterns of the data, but at the same time should make it easier to recognize the general trend of increasing yearly temperature.</p>
+                            <p class="p1" style="color: white; font-size: 14px;">These videos illustrate the difference in sound between monthly and yearly datapoints. The yearly piece in this section was sped up to three times its 120 bpm speed to better illustrate this potential increase in trend recognition.</p>
                             <div><iframe src="" frameborder="0"></iframe></div>
                             <div><iframe src="" frameborder="0"></iframe></div>
                         </div>
                         <div class="sonicTabText" id="tonalityTab">
-                            <p class="p1" style="color: white; font-size: 14px;">2</p>
-                            <p class="p1" style="color: white; font-size: 14px;"></p>
-                            <div><iframe src="" frameborder="0"></iframe></div>
-                            <div><iframe src="" frameborder="0"></iframe></div>
+                            <p class="p1" style="color: white; font-size: 14px;">Especially in the Western world, a major tonality signifies comfort and positivity more so than a minor tonality. The minor mapping uses Eb and Ab rather than E and A. Changing those notes by that half step has a noticeable effect on the feel of the sound. Sonifications mapped to minor tonalities, stressing the minor 3rd, have the potential to make an audience feel more uncomfortable than sonifications using the more “beautiful” major 3rd. This is because more discordant intervals are being used as the building blocks of the sonification, creating a more agitating sound.</p>
+                            <p class="p1" style="color: white; font-size: 14px;">These videos illustrate this phenomenon. The pieces in this section were sped up to three times their 120 bpm speed.</p>
+                            <div class="sonificationElementVideos">
+                                <div class="sonificationElementVideo"><iframe src="https://www.youtube.com/embed/4Tfr2YV2yQM" frameborder="0"></iframe></div>
+                                <div class="sonificationElementVideo"><iframe src="https://www.youtube.com/embed/fKsMaQmD-a4" frameborder="0"></iframe></div>
+                            </div>
                         </div>
                         <div class="sonicTabText" id="mappingTab">
-                            <p class="p1" style="color: white; font-size: 14px;">3</p>
-                            <p class="p1" style="color: white; font-size: 14px;"></p>
-                            <div><iframe src="" frameborder="0"></iframe></div>
-                            <div><iframe src="" frameborder="0"></iframe></div>
+                            <p class="p1" style="color: white; font-size: 14px;">A wider range between the lowest and highest notes in an algorithm allows for more nuance in a sonification (less “rounding” up or down to surrounding notes). For example, mapping to a range of eight notes means that the highest 1/8 of the dataset is mapped to the highest note. Since the temperature is rising, the highest note is played more and more frequently as the sonification goes on. In contrast, when this data is mapped over six octaves, or 43 notes, only the top 1/43rd of the data is mapped to the highest note, and the highest note is only played once or twice. With the set mapped over more octaves, there are more notes at play. This allows for a greater level of detail to be communicated through sound, but also is sometimes overwhelming to a listener.</p>
+                            <p class="p1" style="color: white; font-size: 14px;">These videos show the difference between one- versus six-octave mapping.</p>
+                            <div class="sonificationElementVideos">
+                                <div class="sonificationElementVideo"><iframe src="https://www.youtube.com/embed/wVYzwSCxND8" frameborder="0"></iframe></div>
+                                <div class="sonificationElementVideo"><iframe src="https://www.youtube.com/embed/6o9Xb93OtlA" frameborder="0"></iframe></div>
+                            </div>
                         </div>
                     </div>
+                    <p class="p2" style="font-size: 8px;"><br></p> 
                 </div>
             </div>
             <div id="dataSourcesCollapse">
