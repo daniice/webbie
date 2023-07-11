@@ -548,11 +548,16 @@ button {
 }
 
 .collapseText {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
     color: white;
     padding-left: 16px;
     padding-right: 16px;
-    padding-bottom: 16px;
+}
+
+.collapseText.active {
+    max-height: 500px;
 }
 
 #keyboardGraphImgs {
@@ -600,9 +605,9 @@ button {
 
 .sonificationElementVideos {
     display: flex;
-    gap: 25vw;
+    justify-content: space-evenly;
 }
 
 .sonificationElementVideo {
-    width: 100vw;
+    width: 40vw;
 }

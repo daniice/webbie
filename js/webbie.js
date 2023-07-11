@@ -14,7 +14,7 @@
 //copyrights?
 //READ.me?
 //github access change to SSH?
-//clean up styling and structure to use best consistent coding practices - get rid of inline style, rename classes and ids, computer lang for apostrophes etc
+//clean up styling and structure to use best consistent coding practices - get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", etc
 
 //HOMEPAGE
 //signature on home page below animation
@@ -54,11 +54,13 @@
 //link within entire container
 //dropdowns within pagedrop
 //FOR SOUNDTRACK
-//data and code sources autoscroll into view all the time
-//line animation like dropdown on collapsibles - also animate pulldown
 //make compatible with mobile
-//in future, widget to upload a dataset and have it sampled according to these choices
+//data and code sources autoscroll into view all the time - potentially others too
+//widget to upload a dataset and have it sampled according to these choices
 //change full thesis uploaded to include new edits
+//switch all over to new youtube with better titles - or upload from non-Youtube site
+//line animation like dropdown on collapsibles?
+//make iframes look like they're not youtube vids?
 //collapsed collapsibles stick to the bottom so that a reader can see all options?
 
 
@@ -78,6 +80,7 @@ const pageDrop = Array.from(document.getElementsByClassName('pageDrop'));
 if (check === true) {
     dropDownBtn.remove();
     pageDrop.forEach(page => {
+        page.classList.remove('hide');
         page.classList.add('show');
         page.classList.add('mobile');
     })
@@ -213,16 +216,19 @@ if (collapseButtons.length > 0) {
     collapseButtons.forEach(butt => {
     butt.addEventListener('click', () => {
         let text = butt.nextElementSibling;
-        if (text.style.display === "block") {
-            text.style.display = "none";
+        text.classList.toggle('active');
+        if (text.classList.contains('active')) {
+            text.style.maxHeight = text.scrollHeight + 'px';
         } else {
-            text.style.display = "block";
+            text.style.maxHeight = 0;
         }
 })})}
 
 let sonicButtons = Array.from(document.getElementsByClassName('sonicButton'));
 let sonicTabTexts = Array.from(document.getElementsByClassName('sonicTabText'));
 if (sonicButtons.length > 0) {
+        sonicButtons[0].classList.add("clicked");
+        sonicTabTexts[0].classList.add("show");
         for (let i = 0; i < sonicButtons.length; i++) {
         sonicButtons[i].addEventListener("click", () => {
           for (let j = 0; j < sonicTabTexts.length; j++) {
@@ -235,6 +241,10 @@ if (sonicButtons.length > 0) {
           sonicButtons[i].classList.add("clicked");
         });
       }}
+
+if (check === true && sonicButtons.length>0) {
+    collapseButtons.forEach(classList.add('mobile'))
+}
   
   
   
