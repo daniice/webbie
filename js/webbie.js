@@ -2,23 +2,22 @@
 //get rid of home choice in drop down as left corner does same thing
 //give extra space to "numbers" or base space off of length of word
 //circle (with D?) at top left for pages within pages (sonification)
-//suggestions on all pages, error cha-ua-form-factor on soundtrack
 //make pages (esp images) load quicker
 //make urls not have .html at the ends
-//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments, climate tech funding
-//book reports?
+//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments, climate tech funding, heat pumps
+//move noMobile classes to default
+//book reports
 //write more!
+//suggestions on all pages, error cha-ua-form-factor on soundtrack
+//clean up styling and structure to use best consistent coding practices - get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
 //js for analytics?
-//are noMobile classes necessary or should they move to a default?
 //copyrights?
 //READ.me?
 //github access change to SSH?
-//clean up styling and structure to use best consistent coding practices - get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", etc
 
 //HOMEPAGE
 //signature on home page below animation
-//change amount that animation scales upon hover
 //ghost black lines over hand
 //event on click of ball? rotate360? save until can develop stacked animations?
 //should translate= be the same on all paths?
@@ -38,30 +37,27 @@
 //add essays from school?
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
-//need arrows? how to disappear/reappear correctly?, arrow at top when zoomed to return to words page?
+//need arrows? how to disappear/reappear correctly?
+//arrow at top when zoomed to return to words page?
 
 //ABOUT
 //add explanation of numbers once added
+//block emply form entries
 //artists statement expand upon - harmony? change/make consistent with portfolio?
 //why photo not justifying with space-between?
 //support via donation?
 //link to places of work? Say names/explanations?
 //handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
-//don't handle empty forms?
 
 //NUMBERS
-//what layout - how to create square sizing if square - how to change for mobile
-//link within entire container
-//dropdowns within pagedrop
+//compatible for mobile
+//dropdown within pagedrop
 //FOR SOUNDTRACK
-//make compatible with mobile
 //data and code sources autoscroll into view all the time - potentially others too
 //widget to upload a dataset and have it sampled according to these choices
 //change full thesis uploaded to include new edits
 //switch all over to new youtube with better titles - or upload from non-Youtube site
 //line animation like dropdown on collapsibles?
-//make iframes look like they're not youtube vids?
-//collapsed collapsibles stick to the bottom so that a reader can see all options?
 
 
 //check for mobile for compatibility changes
@@ -161,7 +157,7 @@ if (posts.length>0) {
 }
 
 let post1 = document.querySelector('.post1');
-if (check === true) post1.setHTML('Swipe →');
+if (check === true && post1) post1.setHTML('Swipe →');
 
 const sideArrowRight = document.querySelector('#sideArrowRight');
 const sideArrowLeft = document.querySelector('#sideArrowLeft');
@@ -224,6 +220,19 @@ if (collapseButtons.length > 0) {
         }
 })})}
 
+if (check === true && collapseButtons.length>0) {
+    collapseButtons.forEach(butt => {
+        butt.classList.add('mobile');
+        butt.addEventListener('touchstart', () => {
+            let text = butt.nextElementSibling;
+            text.classList.toggle('active');
+            if (text.classList.contains('active')) {
+                text.style.maxHeight = text.scrollHeight + 'px';
+            } else {
+                text.style.maxHeight = 0;
+            }
+    })})}
+
 let sonicButtons = Array.from(document.getElementsByClassName('sonicButton'));
 let sonicTabTexts = Array.from(document.getElementsByClassName('sonicTabText'));
 if (sonicButtons.length > 0) {
@@ -240,11 +249,14 @@ if (sonicButtons.length > 0) {
           }
           sonicButtons[i].classList.add("clicked");
         });
-      }}
+      }
+    
+    if (check === true) {
+        sonicButtons.forEach(butt => {
+            butt.classList.add('mobile');
+        })
+    }}
 
-if (check === true && sonicButtons.length>0) {
-    collapseButtons.forEach(classList.add('mobile'))
-}
   
   
   
