@@ -240,15 +240,16 @@ if (collapseButtons.length > 0) {
 if (check === true && collapseButtons.length>0) {
     collapseButtons.forEach(butt => {
         butt.classList.add('mobile');
-        butt.addEventListener('touchend', () => {
-            let text = butt.nextElementSibling;
-            text.classList.toggle('active');
-            if (text.classList.contains('active')) {
-                text.style.maxHeight = text.scrollHeight + 'px';
-            } else {
-                text.style.maxHeight = 0;
-            }
-    })})}
+        butt.addEventListener('touchstart', (event) => {
+            let target = this;
+            setTimeout(function() {
+              if (!target.classList.contains('active')) {
+                target.click();
+              }
+            }, 300); 
+            event.preventDefault();
+          })
+    })}
 
 let sonicButtons = Array.from(document.getElementsByClassName('sonicButton'));
 let sonicTabTexts = Array.from(document.getElementsByClassName('sonicTabText'));
