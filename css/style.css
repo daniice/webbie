@@ -607,7 +607,8 @@ button.sonicButton {
 }
 
 button.sonicButton.mobile {
-    font-size: 16px;
+    font-size: 14px;
+    color: white;
 }
 
 .sonicButton.clicked {

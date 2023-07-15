@@ -4,7 +4,7 @@
 //circle (with D?) at top left for pages within pages (sonification)
 //make pages (esp images) load quicker
 //make urls not have .html at the ends
-//"numbers" category of data/science/policy/climate - sonifications videos and grahics, building decarbonization widget, wealth inequality, Indian energy sector sentiments, climate tech funding, heat pumps
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, wealth inequality, Indian energy sector sentiments, climate tech funding, heat pumps
 //move noMobile classes to default
 //book reports
 //write more!
@@ -223,7 +223,7 @@ if (collapseButtons.length > 0) {
 if (check === true && collapseButtons.length>0) {
     collapseButtons.forEach(butt => {
         butt.classList.add('mobile');
-        butt.addEventListener('touchstart', () => {
+        butt.addEventListener('touchend', () => {
             let text = butt.nextElementSibling;
             text.classList.toggle('active');
             if (text.classList.contains('active')) {
