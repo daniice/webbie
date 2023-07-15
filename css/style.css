@@ -63,16 +63,17 @@ body {
     opacity: 1;
 }
 
-.pageDrop {
+.pageDrop, .pageDropNum {
     height: 60px;
     box-sizing: border-box;
+    text-justify: center;
     text-align: center;
     line-height: 60px;
     color: white;
     transition-duration: 0.75s;
 }
 
-.pageDrop a {
+.pageDrop a, .pageDropNum a {
     text-decoration: none;
     color: white;
     font-family: 'Marcellus', serif;
@@ -86,17 +87,27 @@ body {
     width: 90px;
 }
 
+.pageDropNum.noMobile {
+    font-size: 20px;
+    width: 106px;
+}
+
 .pageDrop.mobile {
     font-size: 12px;
     width: 15vw;
 }
 
-.pageDrop:hover {
+.pageDropNum.mobile {
+    font-size: 12px;
+    width: 17vw;
+}
+
+.pageDrop:hover, .pageDropNum:hover {
     background-color: rgb(197, 197, 197);
     color: black;
 }
 
-.pageDrop:hover a {
+.pageDrop:hover a, .pageDropNum:hover a {
     color: black;
 }
 

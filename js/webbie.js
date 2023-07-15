@@ -50,7 +50,7 @@
 //handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 
 //NUMBERS
-//compatible for mobile
+//compatible for mobile - list vertical rather than horizontal
 //dropdown within pagedrop
 //FOR SOUNDTRACK
 //data and code sources autoscroll into view all the time - potentially others too
@@ -72,10 +72,16 @@ if (check === false) console.log('noMobile');
 const topBar = document.querySelector('#topBar');
 const dropDownBtn = document.querySelector('.topBarLine');
 const pageDrop = Array.from(document.getElementsByClassName('pageDrop'));
+const pageDropNum = Array.from(document.getElementsByClassName('pageDropNum'));
 
 if (check === true) {
     dropDownBtn.remove();
     pageDrop.forEach(page => {
+        page.classList.remove('hide');
+        page.classList.add('show');
+        page.classList.add('mobile');
+    })
+    pageDropNum.forEach(page => {
         page.classList.remove('hide');
         page.classList.add('show');
         page.classList.add('mobile');
@@ -92,7 +98,14 @@ dropDownBtn.addEventListener('mouseover', () => {
             page.classList.add('show');
         })
     })
+    pageDropNum.forEach(page => {
+        page.classList.add('noMobile');
+        page.classList.add('show');
 
+        page.addEventListener('mouseover', () => {
+            page.classList.add('show');
+        })
+    })
     dropDownBtn.classList.add('isHover');
 })
 
@@ -100,6 +113,10 @@ topBar.addEventListener('mouseleave', () => {
     pageDrop.forEach(page => {
         page.classList.remove('show');
     })
+    pageDropNum.forEach(page => {
+        page.classList.remove('show');
+    })
+
     dropDownBtn.classList.remove('isHover');
 })
 }
