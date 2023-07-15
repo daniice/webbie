@@ -1,6 +1,5 @@
 //GENERAL
-//get rid of home choice in drop down as left corner does same thing
-//give extra space to "numbers" or base space off of length of word
+//number not showing up on mobile? Fix or bag effort!
 //circle (with D?) at top left for pages within pages (sonification)
 //make pages (esp images) load quicker
 //make urls not have .html at the ends
@@ -15,6 +14,7 @@
 //copyrights?
 //READ.me?
 //github access change to SSH?
+//get rid of home choice in drop down as left corner does same thing?
 
 //HOMEPAGE
 //signature on home page below animation
