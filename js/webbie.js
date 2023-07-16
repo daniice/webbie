@@ -241,12 +241,12 @@ if (check === true && collapseButtons.length>0) {
     collapseButtons.forEach(butt => {
         butt.classList.add('mobile');
         butt.addEventListener('touchstart', (event) => {
-            let target = this;
+            let target = event.target;
             setTimeout(function() {
               if (!target.classList.contains('active')) {
                 target.click();
               }
-            }, 300); 
+            }, 200); 
             event.preventDefault();
           })
     })}
