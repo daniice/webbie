@@ -504,7 +504,6 @@ p.p3 {
 .sonificationContent {
     display: flex;
     flex-direction: column;
-    overflow: scroll;
     justify-content: start;
 }
 

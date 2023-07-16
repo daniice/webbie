@@ -1,9 +1,8 @@
 //GENERAL
-//number not showing up on mobile? Fix or bag effort!
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions
 //circle (with D?) at top left for pages within pages (sonification)
 //make pages (esp images) load quicker
 //make urls not have .html at the ends
-//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, wealth inequality, Indian energy sector sentiments, climate tech funding, heat pumps
 //move noMobile classes to default
 //book reports
 //write more!
@@ -51,7 +50,7 @@
 
 //NUMBERS
 //compatible for mobile - list vertical rather than horizontal
-//dropdown within pagedrop
+//dropdown within pagedrop?
 //FOR SOUNDTRACK
 //data and code sources autoscroll into view all the time - potentially others too
 //widget to upload a dataset and have it sampled according to these choices
