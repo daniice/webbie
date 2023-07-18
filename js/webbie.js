@@ -181,10 +181,15 @@ if (posts.length>0) {
             post.requestFullscreen();
         })
     })
-}
 
 let post1 = document.querySelector('.post1');
-if (check === true && post1) post1.setHTML('Swipe →');
+let scrollSwipe = document.createElement('h1');
+scrollSwipe.style.textAlign = 'center';
+scrollSwipe.classList.add('p1');
+if (check === true) scrollSwipe.textContent = 'Swipe →';
+else scrollSwipe.textContent = 'Scroll →';
+post1.appendChild(scrollSwipe);
+}
 
 const sideArrowRight = document.querySelector('#sideArrowRight');
 const sideArrowLeft = document.querySelector('#sideArrowLeft');
