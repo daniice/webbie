@@ -1,18 +1,24 @@
 //GENERAL
-//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
 //circle (with D?) at top left for pages within pages (sonification)
 //make pages (esp images) load quicker
 //make urls not have .html at the ends
 //move noMobile classes to default
+//overflow of landing page on mobile
 //book reports
 //write more!
+//link to github with PBDW map and data widgets in future - hide Odins
+//keep rereading and editing content and linking between contents
+//get to audience with networking and/or Twitter
+//SEO
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
 //clean up styling and structure to use best consistent coding practices - get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
-//js for analytics?
+//js for analytics on views?
 //copyrights?
 //READ.me?
 //github access change to SSH?
+//new welcome message including numbers?
 //get rid of home choice in drop down as left corner does same thing?
 
 //HOMEPAGE
@@ -32,7 +38,7 @@
 //sign images/embed with transparent first layer?
 
 //WORDS
-//"swipe" not working on phone?
+//"swipe" compatibility on other browsers?
 //add essays from school?
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
@@ -52,11 +58,16 @@
 //compatible for mobile - list vertical rather than horizontal
 //dropdown within pagedrop?
 //FOR SOUNDTRACK
-//data and code sources autoscroll into view all the time - potentially others too
 //widget to upload a dataset and have it sampled according to these choices
 //change full thesis uploaded to include new edits
 //switch all over to new youtube with better titles - or upload from non-Youtube site
 //line animation like dropdown on collapsibles?
+//FOR HEAT PUMPS
+//something out of nothing
+//map of energy lost by not recapturing heat
+//FOR CLIMATE MODEL UNCERTAINTY
+//beautiful anyway
+//compare margins of error with other fields, illustrate effect (or lack of) on broader trencs
 
 
 //check for mobile for compatibility changes
