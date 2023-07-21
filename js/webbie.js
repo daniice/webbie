@@ -4,7 +4,7 @@
 //make pages (esp images) load quicker
 //make urls not have .html at the ends
 //move noMobile classes to default
-//overflow of landing page on mobile
+//change size of about page image
 //book reports
 //write more!
 //link to github with PBDW map and data widgets in future - hide Odins
@@ -12,33 +12,31 @@
 //get to audience with networking and/or Twitter
 //SEO
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
-//clean up styling and structure to use best consistent coding practices - get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", etc
+//clean up styling and structure to use best consistent coding practices - turn images and others into objects, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
 //js for analytics on views?
 //copyrights?
 //READ.me?
-//github access change to SSH?
 //new welcome message including numbers?
 //get rid of home choice in drop down as left corner does same thing?
 
 //HOMEPAGE
 //signature on home page below animation
 //ghost black lines over hand
-//event on click of ball? rotate360? save until can develop stacked animations?
+//event on click of ball? rotate360? save until develop stacked animations?
 //should translate= be the same on all paths?
 //only one path? line of ball morphing into skyline?
 //ball with light in direction of cursor and shadow opposite? swirly lines/bounce? static rotation? box shadows w white?
 
 //IMAGES
 //appear explanation of piece on hover - grey out image with words on top
-//add grinchy, photoshop black in geo city, any others
+//add grinchy, photoshop black in geo city, add/edit any others
 //make images load with pursposeful delay like Anna's site
 //filter options for all, paint, digital, pen, other (change?) - "all" button on left automatically pressed, others get rid of non-category - how to make consistent with design lang?
 //perfect the scrolling behavior with padding on very top?
-//sign images/embed with transparent first layer?
+//Embed with transparent first layer to prevent download?
 
 //WORDS
-//"swipe" compatibility on other browsers?
 //add essays from school?
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
@@ -47,7 +45,7 @@
 
 //ABOUT
 //add explanation of numbers once added
-//block emply form entries
+//block empty form entries
 //artists statement expand upon - harmony? change/make consistent with portfolio?
 //why photo not justifying with space-between?
 //support via donation?
@@ -76,7 +74,6 @@ if(/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.us
 
 if (check === true) console.log('mobile');
 if (check === false) console.log('noMobile');
-
 
 //dropdown menu on hover, lines flip up 90
 const topBar = document.querySelector('#topBar');
@@ -136,6 +133,8 @@ topBar.addEventListener('mouseleave', () => {
 const ball = document.querySelector('.ball');
 const middleMain = document.querySelector('.middleMain');
 const welcomeBlurb = document.querySelector('.welcomeBlurb')
+
+if (ball && check === true) ball.style.height = '60vh';
 
 if (check === false) {
     if (ball) {
