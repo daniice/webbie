@@ -508,8 +508,8 @@ p.p3 {
 
 .sonificationIntro1 {
  padding-bottom: 24px;
- padding-left: 16px;
- padding-right: 16px;
+ padding-left: 44px;
+ padding-right: 44px;
  padding-top: 0px;
 }
 
@@ -580,8 +580,8 @@ button.collapseButton.mobile {
     overflow: hidden;
     transition: max-height 1s ease-in-out;
     color: white;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 44px;
+    padding-right: 44px;
 }
 
 .collapseText.active {
