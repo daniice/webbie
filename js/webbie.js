@@ -1,10 +1,8 @@
 //GENERAL
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
 //circle (with D?) at top left for pages within pages (sonification)
-//make pages (esp images) load quicker
 //make urls not have .html at the ends
 //move noMobile classes to default
-//change size of about page image
 //book reports
 //write more!
 //link to github with PBDW map and data widgets in future - hide Odins
@@ -12,7 +10,7 @@
 //get to audience with networking and/or Twitter
 //SEO
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
-//clean up styling and structure to use best consistent coding practices - turn images and others into objects, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", etc
+//clean up styling and structure to use best consistent coding practices - turn images and others into objects, optimize code, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", reduce file size, etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
 //js for analytics on views?
 //copyrights?
@@ -33,7 +31,6 @@
 //add grinchy, photoshop black in geo city, add/edit any others
 //make images load with pursposeful delay like Anna's site
 //filter options for all, paint, digital, pen, other (change?) - "all" button on left automatically pressed, others get rid of non-category - how to make consistent with design lang?
-//perfect the scrolling behavior with padding on very top?
 //Embed with transparent first layer to prevent download?
 
 //WORDS
@@ -46,7 +43,7 @@
 //ABOUT
 //add explanation of numbers once added
 //block empty form entries
-//artists statement expand upon - harmony? change/make consistent with portfolio?
+//artists statement expand upon - harmony? change/make consistent with portfolio/linkedin?
 //why photo not justifying with space-between?
 //support via donation?
 //link to places of work? Say names/explanations?
@@ -55,14 +52,13 @@
 //NUMBERS
 //compatible for mobile - list vertical rather than horizontal
 //dropdown within pagedrop?
+
 //FOR SOUNDTRACK
 //widget to upload a dataset and have it sampled according to these choices
 //change full thesis uploaded to include new edits
 //switch all over to new youtube with better titles - or upload from non-Youtube site
 //line animation like dropdown on collapsibles?
-//FOR HEAT PUMPS
-//something out of nothing
-//map of energy lost by not recapturing heat
+
 //FOR CLIMATE MODEL UNCERTAINTY
 //beautiful anyway
 //compare margins of error with other fields, illustrate effect (or lack of) on broader trencs
