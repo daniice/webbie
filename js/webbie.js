@@ -1,26 +1,28 @@
 //GENERAL
-//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
+//compatibility with ipad!
 //circle (with D?) at top left for pages within pages (sonification)
 //make urls not have .html at the ends
 //move noMobile classes to default
 //book reports
 //write more!
 //link to github with PBDW map and data widgets in future - hide Odins
+//Google analytics
 //keep rereading and editing content and linking between contents
-//get to audience with networking and/or Twitter
+//get to audience with networking and/or Twitter/LinkedIn
 //SEO
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
 //clean up styling and structure to use best consistent coding practices - turn images and others into objects, optimize code, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", reduce file size, etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
-//js for analytics on views?
+//cookies and js analytics?
 //copyrights?
 //READ.me?
-//new welcome message including numbers?
 //get rid of home choice in drop down as left corner does same thing?
 
 //HOMEPAGE
 //signature on home page below animation
 //ghost black lines over hand
+//new welcome message including numbers?
 //event on click of ball? rotate360? save until develop stacked animations?
 //should translate= be the same on all paths?
 //only one path? line of ball morphing into skyline?
@@ -34,6 +36,7 @@
 //Embed with transparent first layer to prevent download?
 
 //WORDS
+//make font larger when full page is activated
 //add essays from school?
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
@@ -41,12 +44,13 @@
 //arrow at top when zoomed to return to words page?
 
 //ABOUT
+//update professional photo
 //add explanation of numbers once added
 //block empty form entries
-//artists statement expand upon - harmony? change/make consistent with portfolio/linkedin?
 //why photo not justifying with space-between?
 //support via donation?
 //link to places of work? Say names/explanations?
+//artists statement about harmony? - consistent with portfolio/LinkedIn
 //handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 
 //NUMBERS
@@ -54,14 +58,15 @@
 //dropdown within pagedrop?
 
 //FOR SOUNDTRACK
+//hyperlink sources within page
 //widget to upload a dataset and have it sampled according to these choices
-//change full thesis uploaded to include new edits
+//edit full thesis and upload document
 //switch all over to new youtube with better titles - or upload from non-Youtube site
 //line animation like dropdown on collapsibles?
 
 //FOR CLIMATE MODEL UNCERTAINTY
 //beautiful anyway
-//compare margins of error with other fields, illustrate effect (or lack of) on broader trencs
+//compare margins of error with other fields, illustrate effect (or lack of) on broader trends
 
 
 //check for mobile for compatibility changes
