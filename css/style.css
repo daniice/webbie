@@ -648,3 +648,33 @@ button.sonicButton.mobile {
     width: 40vw;
     height: 25vh;
 }
+
+
+/* heatpumps */
+.heatPumpWords {
+    padding-bottom: 24px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heatPumpWords p {
+    color: white;
+    font-size: 14px;
+}
+
+.heatPumpWords h2 {
+    color: white;
+    font-size: 24px;
+    align-self: center;
+}
+
+.heatPImgs {
+    align-self: center;
+}
+
+.heatPImgs img {
+    width: 60vw;
+}
