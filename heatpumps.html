@@ -40,11 +40,11 @@
         <p >Heat pumps do work to manipulate the pressure of a refrigerant, which ultimately results in heat transfer due to the refrigerant’s phase change.</p>
         <div><img src="" alt=""></div>
         <div id="heatPumpCycleExplain">
-            <p>We begin the cycle within the <b>expansion device</b>. The pressure on the refrigerant is decreased, so it becomes a part-vapor, part-liquid with a temperature below the ambient temperature outside.</p>
-            <p>The refrigerant then travels through the <b>evaporator</b>. Here, heat energy from the air outside transfers to the refrigerant, adding energy to transform the refrigerant into a gaseous state.</p>
-            <p>The <b>compressor</b> then does work to add pressure to the gaseous refrigerant. This causes an increase in the refrigerant’s temperature.</p>
-            <p>Afterwards, the refrigerant flows inside through the <b>condenser</b> The refrigerant liquifies, releasing energy as heat into the inside air. It then enters the expansion device to begin the process again.</p>
-            <p class="note">Note: in an air conditioner or refrigerator, this cycle would be reversed, moving heat from the inside out.</p>
+            <p>We begin the cycle within the  <em style="color: red; font-size: 16px;">expansion device </em>. The pressure on the refrigerant is decreased, so it becomes a part-vapor, part-liquid with a temperature below the ambient temperature outside.</p>
+            <p>The refrigerant then travels through the  <em style="color: red; font-size: 16px;">  evaporator </em>. Here, heat energy from the air outside transfers to the refrigerant, adding energy to transform the refrigerant into a gaseous state.</p>
+            <p>The  <em style="color: red; font-size: 16px;">compressor</em>  then does work to add pressure to the gaseous refrigerant. This causes an increase in the refrigerant’s temperature.</p>
+            <p>Afterwards, the refrigerant flows inside through the  <em style="color: red; font-size: 16px;">condenser </em>. The refrigerant liquifies, releasing energy as heat into the inside air. It then enters the expansion device to begin the process again.</p>
+            <p>Note: in an air conditioner or refrigerator, this cycle would be reversed, moving heat from the inside out.</p>
         </div>
 
         <p class="p2"><br></p>
@@ -53,9 +53,21 @@
         <p>The central player in this all is the refrigerant. There are a slew of refrigerants, most with names consisting of the letter R-somenumbers and dyed a scary bright color. They have other properties in common as well, the most important of which is a low boiling point. This is optimal because it means refrigerants vaporize more easily than other substances. This vaporization is what traps energy to release as heat later on, at a higher pressure.</p>
         <p>Some refrigerants are toxic. They also can be harmful in other, more insidious ways. Remember the ozone hole? In the 1970s, refrigerators and air conditioning units in landfills began degrading, releasing their CFC refrigerants into the atmosphere, where Cl and Br ions helped catalyze the natural breakdown of ozone (O3) molecules into O2 molecules, destroying the Earth’s natural UV umbrella. CFCs and HCFCs got phased out in favor of HFCs, which don’t degrade the ozone layer but do have hundreds of times the heat-trapping power of carbon dioxide. The Kigali Amendment commits to the phase-out of HFCs in favor of natural refrigerants such as ammonia, propane, isobutane, and carbon dioxide itself. All this is to say that many refrigerants that are effective at cooling are not suitable for use in the real world.</p>
         <p>Of those that are, each has a unique set of behaviors under different temperatures and pressures. These behaviors can be calculated with variations on the first law of thermodynamics //hover for photo of equation// and the ideal gas law //hover//. They are also encompassed in each refrigerant’s Pressure-Enthalpy (P-H) diagram. </p>
-        <div class="heatPImgs"><img src="./img/phdiag.gif" alt="gif of P-H diagrams"></div>
-
+        
         <p class="p2"><br></p>
+        <div class="heatPImgs"><img src="./img/phGif.gif" alt="gif of P-H diagrams"></div>
+        <p style="font-size: 10px; text-align: center;">Source for all base P-H diagrams: ASHRAE Handbook 2009, Chapter 30</p>
+        <p class="p2"><br></p>
+
+        <p>These swirly charts of eddies and vortexes may seem to be jumbles of information difficult to digest. But they really are a lovely way to keep track of what changes in pressure and enthalpy mean for a substance’s temperature and entropy.</p>
+        <div class="heatPImgs" style="padding-top: 11px;"><img src="" alt="pressure enthalpy diagram with each metric labelled"></div>
+        <div style="border: 1px solid white; border-radius: 8px; padding: 8px;">
+            <p>First, some definitions:</p>
+            <p>Pressure (Pascals): measured on the y-axis. Describes how much stress is on the system. Can be increased by doing work and can be decreased when the system does work on something else.</p>
+            <p>Enthalpy (Joules per kilogram): measured on the x-axis. A measure of the total energy in a system. Equal to //hover to show equation with components labeled// the system’s internal energy plus the product of its volume and pressure.</p>
+            <p>Temperature (degrees Kelvin): perhaps the most intuitive of these concepts. Measured with your regular old thermometer. Temperature lines run horizontally through the liquid-vapor mix region of the diagram and curve away at the edges. Usually increases with enthalpy, but not when a substance is changing state; through the vapor mixing area, the temperature lines are horizontal because increases in enthalpy go towards vaporizing the substance, rather than increasing its temperature.</p>
+            <p>Entropy (Joules per Kelvin): represented by the verticalish lines on the chart,. In this scenario can be described as how vaporized, or disordered, the liquid-vapor mixture is. The thermodynamic identity //hover// shows that the internal energy of a substance is related to a temperature entropy term and a pressure volume term. This means that if pressure and volume remain constant, an increase in a system’s internal energy is distributed between a temperature increase and an entropy rate-of-increase increase //dif words, integrate equation, energy unavailable to do work?//</p>
+        </div>
     </div>
 
     <div id="bottomBar"></div>

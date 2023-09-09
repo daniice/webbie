@@ -1,16 +1,17 @@
 //GENERAL
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
+//for bold fonts, just underline, or switch do a different?
 //circle (with D?) at top left for pages within pages (sonification)
 //make urls not have .html at the ends
 //move noMobile classes to default
 //book reports
 //write more!
 //link to github with PBDW map and data widgets in future - hide Odins
-//Google analytics
+//Google search and traffic analytics with console
 //keep rereading and editing content and linking between contents
 //get to audience with networking and/or Twitter/LinkedIn
-//SEO
+//SEO - alt text for images
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
 //clean up styling and structure to use best consistent coding practices - turn images and others into objects, optimize code, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", reduce file size, etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
@@ -63,6 +64,8 @@
 //edit full thesis and upload document
 //switch all over to new youtube with better titles - or upload from non-Youtube site
 //line animation like dropdown on collapsibles?
+
+//FOR HEATPUMPS
 
 //FOR CLIMATE MODEL UNCERTAINTY
 //beautiful anyway
