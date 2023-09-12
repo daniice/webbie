@@ -60,14 +60,31 @@
         <p class="p2"><br></p>
 
         <p>These swirly charts of eddies and vortexes may seem to be jumbles of information difficult to digest. But they really are a lovely way to keep track of what changes in pressure and enthalpy mean for a substance’s temperature and entropy.</p>
-        <div class="heatPImgs" style="padding-top: 11px;"><img src="" alt="pressure enthalpy diagram with each metric labelled"></div>
         <div style="border: 1px solid white; border-radius: 8px; padding: 8px;">
+            <div class="heatPImgs" style="padding-top: 11px;"><img src="" alt="pressure enthalpy diagram with each metric labelled"></div>
             <p>First, some definitions:</p>
             <p>Pressure (Pascals): measured on the y-axis. Describes how much stress is on the system. Can be increased by doing work and can be decreased when the system does work on something else.</p>
             <p>Enthalpy (Joules per kilogram): measured on the x-axis. A measure of the total energy in a system. Equal to //hover to show equation with components labeled// the system’s internal energy plus the product of its volume and pressure.</p>
             <p>Temperature (degrees Kelvin): perhaps the most intuitive of these concepts. Measured with your regular old thermometer. Temperature lines run horizontally through the liquid-vapor mix region of the diagram and curve away at the edges. Usually increases with enthalpy, but not when a substance is changing state; through the vapor mixing area, the temperature lines are horizontal because increases in enthalpy go towards vaporizing the substance, rather than increasing its temperature.</p>
             <p>Entropy (Joules per Kelvin): represented by the verticalish lines on the chart,. In this scenario can be described as how vaporized, or disordered, the liquid-vapor mixture is. The thermodynamic identity //hover// shows that the internal energy of a substance is related to a temperature entropy term and a pressure volume term. This means that if pressure and volume remain constant, an increase in a system’s internal energy is distributed between a temperature increase and an entropy rate-of-increase increase //dif words, integrate equation, energy unavailable to do work?//</p>
         </div>
+
+        <p>A heat pump cycle can be drawn on the P-H diagram by illustrating which of these characteristics are changed with each step in the cycle.</p>
+        <div style="border: 1px solid white; border-radius: 8px; padding: 8px;">
+            <div class="heatPImgs" style="padding-top: 11px;"><img src="" alt="pressure enthalpy diagram with each part of the cycle labelled"></div>
+            <p>Evaporator: an isothermal and isobaric process. Heat energy is transferred to the refrigerant, but the temperature of the refrigerant does not change. This energy transfer results in vaporization and an increase in entropy.</p>
+            <p>Compressor: an isentropic process. Work that is put into the system goes towards increasing its pressure and enthalpy. The amount of increase of each is dictated by the slope of the constant entropy line and the starting and ending pressure of the compressor.</p>
+            <p>Condenser: an isothermal and isobaric process. Heat energy is leaving the refrigerant, but this energy is coming from a decrease in entropy, rather than temperature.</p>
+            <p>Expansion device: an adiabatic process. The system’s pressure and temperature are lowered as the refrigerant does work on the device, but its enthalpy remains the same due to the increase in volume. Entropy slightly increases.</p>
+            <p>Note: it is possible to superheat and sub-cool a refrigerant by continuing temperature transfer past the boundary of the vapor-mix region. However, this is not a way to increase efficiency, as the compression/expansion processes are usually optimized at the vapor-mix region boundary.</p>
+            <p>Another Note: Note: there is a difference between the entropy of the refrigerant and the entropy of the system. The Second Law of Thermodynamics states that entropy must always increase over time. This applies in the sense that the whole heat pump system, including the electricity being fed into it, must always increase in entropy. However, there are still processes that lower the entropy of the refrigerant within the larger system.</p>
+            <p>Last Note: these are all idealized versions of the heat pump cycle. In reality, there are variations within each of these processes and other types of energy transfer to the environment in places. However, these descriptions are accurate to a close approximation.</p>
+        </div>
+
+        <p class="p2"><br></p>
+
+        <h2>Brain Calisthenics</h2>
+
     </div>
 
     <div id="bottomBar"></div>
