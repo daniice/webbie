@@ -678,3 +678,12 @@ button.sonicButton.mobile {
 .heatPImgs img {
     width: 60vw;
 }
+
+.hoverObj {
+    display: none;
+}
+
+.heatPumpSvg {
+    border-radius: 16px;
+    align-self: center;
+}
