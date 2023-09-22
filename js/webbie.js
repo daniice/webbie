@@ -2,12 +2,11 @@
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
 //for bold fonts, just underline, or switch do a different?
-//circle (with D?) at top left for pages within pages (sonification)
 //make urls not have .html at the ends
 //move noMobile classes to default
 //book reports
 //write more!
-//link to github with PBDW map and data widgets in future - hide Odins
+//link to github with PBDW map and data widgets in future
 //Google search and traffic analytics with console
 //keep rereading and editing content and linking between contents
 //get to audience with networking and/or Twitter/LinkedIn
@@ -18,10 +17,10 @@
 //cookies and js analytics?
 //copyrights?
 //READ.me?
+//signature only on home page?
 //get rid of home choice in drop down as left corner does same thing?
 
 //HOMEPAGE
-//signature on home page below animation
 //ghost black lines over hand
 //new welcome message including numbers?
 //event on click of ball? rotate360? save until develop stacked animations?
@@ -292,6 +291,24 @@ if (sonicButtons.length > 0) {
             butt.classList.add('mobile');
         })
     }}
+
+
+//heat pump interactive hovers
+let hoverObjs = Array.from(document.getElementsByClassName('hoverObj'));
+let hoverWords = Array.from(document.getElementsByClassName('hoverWord'));
+
+if (hoverObjs.length > 0) {
+    hoverObjs.forEach(obj => {
+        obj.classList.add('hide');
+    })
+    hoverWords.forEach(word => {
+        word.addEventListener('mouseover', function(event) {
+          const target = event.target;
+          let shown = hoverObjs.indexOf(target)
+          shown.classList.remove('hide');  
+        })
+    })
+}
 
   
   
