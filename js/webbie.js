@@ -65,6 +65,7 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
+//green dot in svg diagram
 
 //FOR CLIMATE MODEL UNCERTAINTY
 //beautiful anyway
@@ -304,8 +305,15 @@ if (hoverObjs.length > 0) {
     hoverWords.forEach(word => {
         word.addEventListener('mouseover', function(event) {
           const target = event.target;
-          let shown = hoverObjs.indexOf(target)
-          shown.classList.remove('hide');  
+          let shown = hoverWords.indexOf(target);
+          hoverObjs[shown].classList.remove('hide');  
+        })
+    })
+    hoverWords.forEach(word => {
+        word.addEventListener('mouseleave', function(event) {
+          const target = event.target;
+          let shown = hoverWords.indexOf(target);
+          hoverObjs[shown].classList.add('hide');  
         })
     })
 }

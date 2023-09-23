@@ -34,6 +34,7 @@ body {
     padding-left: 16px;
     padding-top: 8px;
     padding-bottom: 8px;
+    width: 50px;
 }
 
 #ballLabel a {
@@ -682,4 +683,8 @@ button.sonicButton.mobile {
 .heatPumpSvg {
     border-radius: 16px;
     align-self: center;
+}
+
+.hoverWord.isHover {
+    cursor: pointer;
 }
