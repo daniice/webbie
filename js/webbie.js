@@ -1,6 +1,7 @@
 //GENERAL
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
+//better handling of svgs - switch some to layered pngs?
 //for bold fonts, just underline, or switch do a different?
 //make urls not have .html at the ends
 //move noMobile classes to default
@@ -65,7 +66,13 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
-//green dot in svg diagram
+//quality of first heat pump img
+//instructions on where to hover
+//consistent color scheme?
+//all imgs to be 70vw?
+
+//FOR ENERGY MARKET MODEL
+//scroll effects
 
 //FOR CLIMATE MODEL UNCERTAINTY
 //beautiful anyway
@@ -318,6 +325,30 @@ if (hoverObjs.length > 0) {
     })
 }
 
+let hoverEqs = Array.from(document.getElementsByClassName('hoverEq'));
+let hoverImgs = Array.from(document.getElementsByClassName('hoverImg'));
+
+if (hoverEqs.length > 0) {
+    hoverImgs.forEach(img => {
+        img.classList.add('hide');
+    })
+    hoverEqs.forEach(eq => {
+        eq.addEventListener('mouseover', function(event) {
+            const target = event.target;
+            let shown = hoverEqs.indexOf(target);
+            let top = (target.offsetTop+20) + "px";
+            let left = target.offsetLeft + "px";
+            hoverImgs[shown].style.top = top;
+            hoverImgs[shown].style.left = left;
+            hoverImgs[shown].classList.remove('hide');
+        })
+        eq.addEventListener('mouseleave', function(event) {
+            const target = event.target;
+            let shown = hoverEqs.indexOf(target);
+            hoverImgs[shown].classList.add('hide');
+        })
+    })
+}
   
   
   

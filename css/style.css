@@ -672,12 +672,16 @@ button.sonicButton.mobile {
     align-self: center;
 }
 
+.heatPumpWords a {
+    color: white;
+}
+
 .heatPImgs {
     align-self: center;
 }
 
 .heatPImgs img {
-    width: 60vw;
+    height: 70vh;
 }
 
 .heatPumpSvg {
@@ -685,9 +689,21 @@ button.sonicButton.mobile {
     align-self: center;
 }
 
-.heatPumpWords strong {
+.hoverWord {
     text-decoration: underline; 
     cursor: pointer; 
     font-family: 'Arial'; 
     color: rgb(167, 37, 37); 
+}
+
+.hoverEq {
+    text-decoration: underline; 
+    cursor: pointer; 
+    font-family: 'Arial'; 
+    color: rgb(39, 119, 188); 
+}
+
+.hoverImg {
+    position: absolute;
+    width: 150px;
 }
