@@ -66,10 +66,10 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
-//quality of first heat pump img
-//instructions on where to hover
+//make cycle diagram go same way as p-h, arrows on p-h
+//border radii in combo graphics
 //consistent color scheme?
-//all imgs to be 70vw?
+//all imgs to be same size?
 
 //FOR ENERGY MARKET MODEL
 //scroll effects
