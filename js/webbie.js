@@ -66,8 +66,6 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
-//make cycle diagram go same way as p-h, arrows on p-h
-//border radii in combo graphics
 //consistent color scheme?
 //all imgs to be same size?
 
