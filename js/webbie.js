@@ -1,7 +1,7 @@
 //GENERAL
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
-//move noMobile classes to default
+//redo noMobile implementation
 //book reports
 //write more!
 //link to github with PBDW map and data widgets in future
@@ -20,7 +20,6 @@
 
 //HOMEPAGE
 //ghost black lines over hand
-//new welcome message including numbers?
 //event on click of ball? rotate360? save until develop stacked animations?
 //should translate= be the same on all paths?
 //only one path? line of ball morphing into skyline?
@@ -52,7 +51,6 @@
 //handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 
 //NUMBERS
-//compatible with mobile - list vertical rather than horizontal
 //dropdown within pagedrop?
 
 //FOR SOUNDTRACK
@@ -66,9 +64,7 @@
 //mobile hover glitches
 //different font size for notes?
 //animation for hovers?
-//highlight words as yellow?
 //consistent color scheme?
-//all imgs to be same size?
 
 //FOR ENERGY MARKET MODEL
 //scroll effects

@@ -166,10 +166,9 @@ body {
     width: 100px;
     height: 100px;
     text-align: right;
-    top: 50vh;
+    top: 55vh;
     left: 50vw;
     margin-top: -50px; 
-    /* Negative half of height ..? */
     margin-left: -50px;
     color: white;
     font-size: 10px;
@@ -457,18 +456,32 @@ p.p3 {
     justify-content: center;
     align-items: center;
     padding: 16px;
+    text-align: center;
 }
 
+@media (min-width: 481px) {
 #numbersLinksContainer {
     display: flex;
     align-self: center;
-    flex-direction: horizontal;
+    flex-direction: row;
     justify-content: center;
     text-align: center;
     gap: 16px;
 }
+}
 
-.numberLink {
+@media (max-width: 480px) {
+    #numbersLinksContainer {
+display: flex;
+flex-direction: column;
+gap: 16px;
+justify-content: center;
+    text-align: center;
+}
+}
+
+@media (min-width: 481px) {
+    .numberLink {
     border: 1px solid white;
     color: white;
     border-radius: 16px;
@@ -479,6 +492,22 @@ p.p3 {
     padding-right: 4vw;
     text-align: center;
     transition-duration: 0.75s;
+}
+}
+
+@media (max-width: 480px) {
+    .numberLink {
+    border: 1px solid white;
+    color: white;
+    border-radius: 16px;
+    width: 75vw;
+    padding-top: 7vh;
+    padding-bottom: 7vh;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    text-align: center;
+    transition-duration: 0.75s;
+}
 }
 
 .numberLink a {
@@ -696,11 +725,23 @@ button.sonicButton.mobile {
     color: rgb(167, 37, 37); 
 }
 
+#heatPumpCycleExplain .hoverWord:hover, #heatpumpCombo .hoverWord:hover {
+    background-color: yellow;
+}
+
+#heatpumpPH .hoverWord:hover {
+    background-color: rgb(186, 186, 186);
+}
+
 .hoverEq {
     text-decoration: underline; 
     cursor: pointer; 
     font-family: 'Arial'; 
     color: rgb(39, 119, 188); 
+}
+
+.hoverEq:hover {
+    background-color: white;
 }
 
 .hoverImg {
