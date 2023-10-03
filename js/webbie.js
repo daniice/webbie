@@ -1,7 +1,6 @@
 //GENERAL
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
-//make urls not have .html at the ends
 //move noMobile classes to default
 //book reports
 //write more!
@@ -17,6 +16,7 @@
 //copyrights?
 //READ.me?
 //get rid of home choice in drop down as left corner does same thing?
+//mapbox slow on own webpage, link to embedded squarespace or improve loading time?
 
 //HOMEPAGE
 //ghost black lines over hand
