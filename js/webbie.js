@@ -1,8 +1,6 @@
 //GENERAL
-//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, heat pumps, power markets, energy sector player sentiments/interactions, generative design
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
-//better handling of svgs - switch some to layered pngs?
-//for bold fonts, just underline, or switch do a different?
 //make urls not have .html at the ends
 //move noMobile classes to default
 //book reports
@@ -18,7 +16,6 @@
 //cookies and js analytics?
 //copyrights?
 //READ.me?
-//signature only on home page?
 //get rid of home choice in drop down as left corner does same thing?
 
 //HOMEPAGE
@@ -51,11 +48,11 @@
 //why photo not justifying with space-between?
 //support via donation?
 //link to places of work? Say names/explanations?
-//artists statement about harmony? - consistent with portfolio/LinkedIn
+//artists statement consistent with portfolio/LinkedIn
 //handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 
 //NUMBERS
-//compatible for mobile - list vertical rather than horizontal
+//compatible with mobile - list vertical rather than horizontal
 //dropdown within pagedrop?
 
 //FOR SOUNDTRACK
@@ -66,6 +63,10 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
+//mobile hover glitches
+//different font size for notes?
+//animation for hovers?
+//highlight words as yellow?
 //consistent color scheme?
 //all imgs to be same size?
 
