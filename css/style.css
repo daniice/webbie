@@ -82,24 +82,32 @@ body {
     height: 100%;
 }
 
-.pageDrop.noMobile {
+@media (min-width: 481px) {
+    .pageDrop {
     font-size: 16px;
     width: 70px;
 }
+}
 
-.pageDropNum.noMobile {
+@media (min-width: 481px) {
+    .pageDropNum {
     font-size: 16px;
     width: 82px;
 }
+}
 
-.pageDrop.mobile {
+@media (max-width: 480px) {
+    .pageDrop {
     font-size: 12px;
     width: 15vw;
 }
+}
 
-.pageDropNum.mobile {
+@media (max-width: 480px) {
+    .pageDropNum {
     font-size: 12px;
     width: 17vw;
+    }
 }
 
 .pageDrop:hover, .pageDropNum:hover {
@@ -193,15 +201,19 @@ body {
     overflow-x: hidden;
 }
  
-.gallery.noMobile {
+@media (min-width: 768px) {
+    .gallery {
     scroll-snap-type: mandatory;
     scroll-snap-points-y: repeat(100vh);  
     scroll-snap-type: y mandatory;
     /* first two scroll snap attributes for browser compatibility */
 }
+}
 
-.gallery.mobile {
+@media (max-width: 767px) {
+.gallery {
     scroll-snap-type: none;
+}
 }
 
 img {
@@ -293,50 +305,20 @@ img {
 }
 
 p.p1 {
-    font-size: 12px;
+    font-size: 14px;
     color: black;
 }
 
 p.p2 {
-    font-size: 12px;
+    font-size: 14px;
     color: black;
     min-height: 12.0px;
 }
 
 p.p3 {
-    font-size: 12px;
+    font-size: 14px;
     color: black;
     text-align: center;
-}
-
-#sideArrowRight {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
-    border-radius: 8px;
-    padding: 8px;
-    position: fixed;
-    top: 45vh;
-    left: 91vw;
-    min-width: 50px;
-}
-
-#sideArrowLeft {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 36px;
-    border-radius: 8px;
-    padding: 8px;
-    position: fixed;
-    top: 45vh;
-    left: 3vw;
-    min-width: 50px;
-}
-
-#sideArrowRight:hover, #sideArrowLeft:hover {
-    cursor: pointer;
 }
 
 
@@ -345,15 +327,18 @@ p.p3 {
     align-self: center;
     margin-top: 40px;
     border: solid 2px white;
-    width: 50vw;
 }
 
-.aboutMeImg.noMobile {
+@media (min-width: 481px) {
+    .aboutMeImg {
     width: 30vw;
 }
+}
 
-.aboutMeImg.mobile {
+@media (max-width: 480px) {
+    .aboutMeImg {
     width: 75vw;
+}
 }
 
 .aboutText {
@@ -363,15 +348,18 @@ p.p3 {
     padding-right: 8vw;
     padding-bottom: 25px;
     padding-top: 25px;
-    font-size: 13px;
 }
 
-.aboutText.mobile {
+@media (max-width: 480px) {
+    .aboutText {
     font-size: 11px;
 }
+}
 
-.aboutText.noMobile {
-    font-size: 13px;
+@media (min-width: 481px) {
+    .aboutText {
+    font-size: 14px;
+}
 }
 
 .aboutText a {
@@ -388,15 +376,18 @@ p.p3 {
     padding-bottom: 12px;
     border: solid 2px white;
     border-radius: 8px;
-    font-size: 13px;
 }
 
-.thoughts.noMobile {
-    font-size: 13px;
+@media (min-width: 481px) {
+    .thoughts {
+    font-size: 14px;
+}
 }
 
-.thoughts.mobile {
+@media (max-width: 480px) {
+    .thoughts {
     font-size: 11px;
+}
 }
 
 .thoughts a {
@@ -585,7 +576,6 @@ iframe {
 
 button.collapseButton {
     font-family: 'Marcellus', serif;
-    font-size: 24px;
     text-align: left;
     color: white;
     background-color: rgba(255, 255, 255, 0.1);
@@ -599,10 +589,16 @@ button.collapseButton:hover {
     cursor: pointer;
 }
 
-button.collapseButton.mobile {
+@media (min-width: 481px) {
+    button.collapseButton {
+        font-size: 24px; 
+    } 
+}
+
+@media (max-width: 480px) {
+    button.collapseButton {
     font-size: 16px;
-    font-family: 'Marcellus', serif;
-    text-align: left;
+}
 }
 
 .collapseText {
@@ -644,9 +640,16 @@ button.sonicButton {
     text-align: left;
 }
 
-button.sonicButton.mobile {
+@media (min-width: 481px) {
+    button.sonicButton {
+    font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    button.sonicButton {
     font-size: 14px;
-    color: white;
+}
 }
 
 .sonicButton.clicked {
@@ -692,7 +695,7 @@ button.sonicButton.mobile {
 
 .heatPumpWords p {
     color: white;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .heatPumpWords h2 {

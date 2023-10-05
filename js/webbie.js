@@ -1,5 +1,5 @@
 //GENERAL
-//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DES systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DER systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
 //redo noMobile implementation
 //book reports
@@ -12,6 +12,7 @@
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
 //clean up styling and structure to use best consistent coding practices - turn images and others into objects, optimize code, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", reduce file size, etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
+//font bigger throughout
 //cookies and js analytics?
 //copyrights?
 //READ.me?
@@ -34,6 +35,7 @@
 
 //WORDS
 //make font larger when full page is activated
+//don't allow full-screen for first marination slide
 //add essays from school?
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
@@ -44,6 +46,7 @@
 //update professional photo
 //add explanation of numbers once added
 //block empty form entries
+//get rid of thoughts, just put email?
 //why photo not justifying with space-between?
 //support via donation?
 //link to places of work? Say names/explanations?
@@ -61,6 +64,7 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
+//"hover over" to say "tap" for mobile
 //mobile hover glitches
 //different font size for notes?
 //animation for hovers?
@@ -92,19 +96,16 @@ if (check === true) {
     pageDrop.forEach(page => {
         page.classList.remove('hide');
         page.classList.add('show');
-        page.classList.add('mobile');
     })
     pageDropNum.forEach(page => {
         page.classList.remove('hide');
         page.classList.add('show');
-        page.classList.add('mobile');
     })
 }
 
 else {
 dropDownBtn.addEventListener('mouseover', () => {
     pageDrop.forEach(page => {
-        page.classList.add('noMobile');
         page.classList.add('show');
 
         page.addEventListener('mouseover', () => {
@@ -112,7 +113,6 @@ dropDownBtn.addEventListener('mouseover', () => {
         })
     })
     pageDropNum.forEach(page => {
-        page.classList.add('noMobile');
         page.classList.add('show');
 
         page.addEventListener('mouseover', () => {
@@ -157,16 +157,6 @@ if (check === false) {
 }
 
 
-//image page scroll set to none when mobile
-const gallery = document.querySelector('.gallery');
-
-if (check === true) {
-    if (gallery) gallery.classList.add('mobile')
-}
-
-else if (gallery) gallery.classList.add('noMobile');
-
-
 //word page post expand to full screen when clicked, scroll further when arrow is clicked
 const posts = Array.from(document.querySelectorAll('.post'));
 
@@ -196,52 +186,6 @@ else scrollSwipe.textContent = 'Scroll →';
 post1.appendChild(scrollSwipe);
 }
 
-const sideArrowRight = document.querySelector('#sideArrowRight');
-const sideArrowLeft = document.querySelector('#sideArrowLeft');
-const postContainer = document.querySelector('.postContainer');
-
-if (sideArrowRight) {
-    sideArrowLeft.classList.add('hide');
-    sideArrowRight.addEventListener('click', () => {
-        const scrollPercent = 100 * (postContainer.scrollLeft + 300) / (postContainer.scrollWidth-postContainer.clientWidth);
-        postContainer.scrollBy({
-            top: 0,
-            left: 300,
-            behavior : "smooth"
-        })
-        sideArrowLeft.classList.remove('hide');
-        if (scrollPercent > 70) sideArrowRight.classList.add('hide');
-        })
-}
-
-if (sideArrowLeft) {
-        sideArrowLeft.addEventListener('click', () => {
-            if (sideArrowRight.classList.contains('hide')) sideArrowRight.classList.remove('hide');
-            const scrollPercent = 100 * (postContainer.scrollLeft) / (postContainer.scrollWidth-postContainer.clientWidth);
-            console.log(scrollPercent);
-            if (scrollPercent < 35) sideArrowLeft.classList.add('hide');
-            postContainer.scrollBy({
-                top: 0,
-                left: -300,
-                behavior : "smooth"
-            })
-        })
-}
-
-
-//about page check for mobile 
-let aboutMeImg = document.querySelector('.aboutMeImg');
-if (check === true && aboutMeImg) aboutMeImg.classList.add('mobile');
-else if (aboutMeImg) aboutMeImg.classList.add('noMobile');
-
-let aboutText = document.querySelector('.aboutText');
-if (check === true && aboutText) aboutText.classList.add('mobile');
-else if (aboutMeImg) aboutText.classList.add('noMobile');
-
-let thoughts = document.querySelector('.thoughts');
-if (check === true && thoughts) thoughts.classList.add('mobile');
-else if (aboutMeImg) thoughts.classList.add('noMobile');
-
 
 //sonification collapsibles and elements of sonic experience tabs
 let collapseButtons = Array.from(document.getElementsByClassName('collapseButton'));
@@ -259,7 +203,6 @@ if (collapseButtons.length > 0) {
 
 if (check === true && collapseButtons.length>0) {
     collapseButtons.forEach(butt => {
-        butt.classList.add('mobile');
         butt.addEventListener('touchstart', (event) => {
             let target = event.target;
             setTimeout(function() {
@@ -288,12 +231,7 @@ if (sonicButtons.length > 0) {
           sonicButtons[i].classList.add("clicked");
         });
       }
-    
-    if (check === true) {
-        sonicButtons.forEach(butt => {
-            butt.classList.add('mobile');
-        })
-    }}
+}
 
 
 //heat pump interactive hovers
