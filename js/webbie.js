@@ -1,7 +1,6 @@
 //GENERAL
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DER systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
 //compatibility with ipad!
-//redo noMobile implementation
 //book reports
 //write more!
 //link to github with PBDW map and data widgets in future
@@ -12,7 +11,7 @@
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
 //clean up styling and structure to use best consistent coding practices - turn images and others into objects, optimize code, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", reduce file size, etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
-//font bigger throughout
+//font bigger throughout?
 //cookies and js analytics?
 //copyrights?
 //READ.me?
@@ -66,9 +65,11 @@
 //FOR HEATPUMPS
 //"hover over" to say "tap" for mobile
 //mobile hover glitches
+//different colors for hover words?
 //different font size for notes?
 //animation for hovers?
 //consistent color scheme?
+//ideas in pages doc?
 
 //FOR ENERGY MARKET MODEL
 //scroll effects

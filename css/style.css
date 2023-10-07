@@ -305,18 +305,18 @@ img {
 }
 
 p.p1 {
-    font-size: 14px;
+    font-size: 18px;
     color: black;
 }
 
 p.p2 {
-    font-size: 14px;
+    font-size: 18px;
     color: black;
-    min-height: 12.0px;
+    min-height: 18.0px;
 }
 
 p.p3 {
-    font-size: 14px;
+    font-size: 18px;
     color: black;
     text-align: center;
 }
@@ -352,13 +352,13 @@ p.p3 {
 
 @media (max-width: 480px) {
     .aboutText {
-    font-size: 11px;
+    font-size: 14px;
 }
 }
 
 @media (min-width: 481px) {
     .aboutText {
-    font-size: 14px;
+    font-size: 18px;
 }
 }
 
@@ -380,13 +380,13 @@ p.p3 {
 
 @media (min-width: 481px) {
     .thoughts {
-    font-size: 14px;
+    font-size: 18px;
 }
 }
 
 @media (max-width: 480px) {
     .thoughts {
-    font-size: 11px;
+    font-size: 14px;
 }
 }
 
@@ -695,7 +695,7 @@ button.sonicButton {
 
 .heatPumpWords p {
     color: white;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .heatPumpWords h2 {
