@@ -63,12 +63,11 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
-//"hover over" to say "tap" for mobile
+//hoverToTap behavior iPad
 //mobile hover glitches
-//different colors for hover words?
+//different colors for hover words - consistent color scheme?
 //different font size for notes?
 //animation for hovers?
-//consistent color scheme?
 //ideas in pages doc?
 
 //FOR ENERGY MARKET MODEL
@@ -282,6 +281,11 @@ if (hoverEqs.length > 0) {
             hoverImgs[shown].classList.add('hide');
         })
     })
+}
+
+let hoverToTap = document.querySelector('.hoverToTap');
+if (check === true) {
+    hoverToTap.innerHTML = "Tap";
 }
   
   
