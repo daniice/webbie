@@ -65,10 +65,10 @@
 //FOR HEATPUMPS
 //hoverToTap behavior iPad
 //mobile hover glitches
+//ideas in pages doc
 //different colors for hover words - consistent color scheme?
 //different font size for notes?
 //animation for hovers?
-//ideas in pages doc?
 
 //FOR ENERGY MARKET MODEL
 //scroll effects
@@ -162,7 +162,7 @@ const posts = Array.from(document.querySelectorAll('.post'));
 
 if (posts.length>0) {
     posts.forEach(post => {
-        if (check === false) {
+        if (check === false && post!=posts[0]) {
             post.addEventListener('mouseover', () => {
             post.classList.add('isHover');
         })
@@ -172,9 +172,11 @@ if (posts.length>0) {
         })
     }
 
-        post.addEventListener('click', () => {
+        if (post!=posts[0]) {
+            post.addEventListener('click', () => {
             post.requestFullscreen();
         })
+    }
     })
 
 let post1 = document.querySelector('.post1');

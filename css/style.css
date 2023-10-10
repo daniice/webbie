@@ -643,12 +643,14 @@ button.sonicButton {
 @media (min-width: 481px) {
     button.sonicButton {
     font-size: 20px;
+    color: black;
     }
 }
 
 @media (max-width: 480px) {
     button.sonicButton {
     font-size: 14px;
+    color: black;
 }
 }
 
