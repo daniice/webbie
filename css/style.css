@@ -304,19 +304,28 @@ img {
     padding-top: 0px;
 }
 
-p.p1 {
+@media (max-width: 480px) {
+    p.p1, p.p2, p.p3 {
+    font-size: 14px;
+}
+}
+
+@media (min-width: 481px) {
+    p.p1, p.p2, p.p3 {
     font-size: 18px;
+}
+}
+
+p.p1 {
     color: black;
 }
 
 p.p2 {
-    font-size: 18px;
     color: black;
     min-height: 18.0px;
 }
 
 p.p3 {
-    font-size: 18px;
     color: black;
     text-align: center;
 }

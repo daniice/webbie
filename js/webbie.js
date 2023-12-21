@@ -1,6 +1,6 @@
 //GENERAL
 //"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DER systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
-//compatibility with ipad!
+//compatibility with ipad! Images, soundtrack, words, others
 //book reports
 //write more!
 //link to github with PBDW map and data widgets in future
@@ -11,19 +11,15 @@
 //suggestions on all pages, error cha-ua-form-factor on soundtrack
 //clean up styling and structure to use best consistent coding practices - turn images and others into objects, optimize code, add functions, get rid of inline style, rename classes and ids, computer lang for apostrophes, ''"", reduce file size, etc
 //compatibility for depreceated browsers - test - if (css.supports ...) {...} - more advanced as time goes on
-//font bigger throughout?
 //cookies and js analytics?
 //copyrights?
 //READ.me?
 //get rid of home choice in drop down as left corner does same thing?
-//mapbox slow on own webpage, link to embedded squarespace or improve loading time?
 
 //HOMEPAGE
 //ghost black lines over hand
 //event on click of ball? rotate360? save until develop stacked animations?
 //should translate= be the same on all paths?
-//only one path? line of ball morphing into skyline?
-//ball with light in direction of cursor and shadow opposite? swirly lines/bounce? static rotation? box shadows w white?
 
 //IMAGES
 //appear explanation of piece on hover - grey out image with words on top
@@ -33,8 +29,6 @@
 //Embed with transparent first layer to prevent download?
 
 //WORDS
-//make font larger when full page is activated
-//don't allow full-screen for first marination slide
 //add essays from school?
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
@@ -44,13 +38,11 @@
 //ABOUT
 //update professional photo
 //add explanation of numbers once added
-//block empty form entries
-//get rid of thoughts, just put email?
 //why photo not justifying with space-between?
 //support via donation?
 //link to places of work? Say names/explanations?
 //artists statement consistent with portfolio/LinkedIn
-//handle form data via google forms/tutorial for now, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
+//if form, block empty entries, handle form data via google forms/tutorial, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 
 //NUMBERS
 //dropdown within pagedrop?
@@ -70,7 +62,7 @@
 //different font size for notes?
 //animation for hovers?
 
-//FOR ENERGY MARKET MODEL
+//FOR DER SYSTEMS/BENEFITS OF GRID DIGITALIZATION
 //scroll effects
 
 //FOR CLIMATE MODEL UNCERTAINTY
