@@ -307,12 +307,14 @@ img {
 @media (max-width: 480px) {
     p.p1, p.p2, p.p3 {
     font-size: 14px;
+    min-height: 14.0px;
 }
 }
 
 @media (min-width: 481px) {
     p.p1, p.p2, p.p3 {
     font-size: 18px;
+    min-height: 18.0px;
 }
 }
 
@@ -322,7 +324,6 @@ p.p1 {
 
 p.p2 {
     color: black;
-    min-height: 18.0px;
 }
 
 p.p3 {
