@@ -313,8 +313,8 @@ img {
 
 @media (min-width: 481px) {
     p.p1, p.p2, p.p3 {
-    font-size: 18px;
-    min-height: 18.0px;
+    font-size: 16px;
+    min-height: 16.0px;
 }
 }
 
@@ -368,7 +368,7 @@ p.p3 {
 
 @media (min-width: 481px) {
     .aboutText {
-    font-size: 18px;
+    font-size: 16px;
 }
 }
 
@@ -390,7 +390,7 @@ p.p3 {
 
 @media (min-width: 481px) {
     .thoughts {
-    font-size: 18px;
+    font-size: 16px;
 }
 }
 
@@ -536,7 +536,6 @@ justify-content: center;
     justify-content: start;
 }
 
-
 .sonificationIntro1 {
  padding-bottom: 24px;
  padding-left: 44px;
@@ -546,6 +545,18 @@ justify-content: center;
 
 .sonificationIntro1 p{
     color: white;
+}
+
+@media (min-width: 481px) {
+    .sonificationContent p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .sonificationContent p {
+        font-size: 14px;
+    }
 }
 
 #sonificationVids {
@@ -705,9 +716,18 @@ button.sonicButton {
     flex-direction: column;
 }
 
-.heatPumpWords p {
-    color: white;
-    font-size: 18px;
+@media (min-width: 481px) {
+    .sonificationContent p {
+        font-size: 16px;
+        color: white;
+    }
+}
+
+@media (max-width: 480px) {
+    .sonificationContent p {
+        font-size: 14px;
+        color: white;
+    }
 }
 
 .heatPumpWords h2 {
