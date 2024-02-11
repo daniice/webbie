@@ -306,8 +306,8 @@ img {
 
 @media (max-width: 480px) {
     p.p1, p.p2, p.p3 {
-    font-size: 15px;
-    min-height: 15.0px;
+    font-size: 16px;
+    min-height: 16.0px;
 }
 }
 
@@ -356,10 +356,10 @@ p.p3 {
     width: 75vw;
 }
 .aboutText {
-    font-size: 15px;
+    font-size: 16px;
 }
 .thoughts {
-    font-size: 15px;
+    font-size: 16px;
 }
 }
 
@@ -543,7 +543,7 @@ justify-content: center;
 
 @media (max-width: 480px) {
     .sonificationContent p {
-        font-size: 15px;
+        font-size: 16px;
     }
 }
 
@@ -713,7 +713,7 @@ button.sonicButton {
 
 @media (max-width: 480px) {
     .heatPumpWords p {
-        font-size: 15px;
+        font-size: 16px;
         color: white;
     }
 }
