@@ -1,8 +1,6 @@
 //GENERAL
-//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, DER systems, wealth inequality, climate tech funding, power markets, energy sector player sentiments/interactions, generative design
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, energy transimssion systems, energy market models, wealth inequality, climate tech funding, energy sector player sentiments/interactions, generative design
 //compatibility with ipad! Images, soundtrack, words, others
-//book reports
-//write more!
 //link to github with PBDW map and data widgets in future
 //Google search and traffic analytics with console
 //keep rereading and editing content and linking between contents
@@ -30,6 +28,8 @@
 
 //WORDS
 //add essays from school?
+//write more!
+//book reports
 //allow option to select random writing piece?
 //perfect sizing? and perfect border/padding on hover?
 //need arrows? how to disappear/reappear correctly?
@@ -38,11 +38,9 @@
 //ABOUT
 //update professional photo
 //add explanation of numbers once added
-//why photo not justifying with space-between?
 //support via donation?
-//link to places of work? Say names/explanations?
+//link to places of work? Names/explanations?
 //artists statement consistent with portfolio/LinkedIn
-//if form, block empty entries, handle form data via google forms/tutorial, do backend (Python, flask, more detailed AJAX handling) once understand security implications - add recaptcha verification?
 
 //NUMBERS
 //dropdown within pagedrop?
@@ -59,7 +57,6 @@
 //mobile hover glitches
 //ideas in pages doc
 //different colors for hover words - consistent color scheme?
-//different font size for notes?
 //animation for hovers?
 
 //FOR DER SYSTEMS/BENEFITS OF GRID DIGITALIZATION
