@@ -306,15 +306,15 @@ img {
 
 @media (max-width: 480px) {
     p.p1, p.p2, p.p3 {
-    font-size: 14px;
-    min-height: 14.0px;
+    font-size: 15px;
+    min-height: 15.0px;
 }
 }
 
 @media (min-width: 481px) {
     p.p1, p.p2, p.p3 {
-    font-size: 16px;
-    min-height: 16.0px;
+    font-size: 17px;
+    min-height: 17.0px;
 }
 }
 
@@ -343,11 +343,23 @@ p.p3 {
     .aboutMeImg {
     width: 30vw;
 }
+.aboutText {
+    font-size: 16px;
+}
+.thoughts {
+    font-size: 16px;
+}
 }
 
 @media (max-width: 480px) {
     .aboutMeImg {
     width: 75vw;
+}
+.aboutText {
+    font-size: 14px;
+}
+.thoughts {
+    font-size: 14px;
 }
 }
 
@@ -358,18 +370,6 @@ p.p3 {
     padding-right: 8vw;
     padding-bottom: 25px;
     padding-top: 25px;
-}
-
-@media (max-width: 480px) {
-    .aboutText {
-    font-size: 14px;
-}
-}
-
-@media (min-width: 481px) {
-    .aboutText {
-    font-size: 16px;
-}
 }
 
 .aboutText a {
@@ -386,18 +386,6 @@ p.p3 {
     padding-bottom: 12px;
     border: solid 2px white;
     border-radius: 8px;
-}
-
-@media (min-width: 481px) {
-    .thoughts {
-    font-size: 16px;
-}
-}
-
-@media (max-width: 480px) {
-    .thoughts {
-    font-size: 14px;
-}
 }
 
 .thoughts a {
@@ -549,13 +537,13 @@ justify-content: center;
 
 @media (min-width: 481px) {
     .sonificationContent p {
-        font-size: 16px;
+        font-size: 17px;
     }
 }
 
 @media (max-width: 480px) {
     .sonificationContent p {
-        font-size: 14px;
+        font-size: 15px;
     }
 }
 
@@ -718,14 +706,14 @@ button.sonicButton {
 
 @media (min-width: 481px) {
     .heatPumpWords p {
-        font-size: 16px;
+        font-size: 17px;
         color: white;
     }
 }
 
 @media (max-width: 480px) {
     .heatPumpWords p {
-        font-size: 14px;
+        font-size: 15px;
         color: white;
     }
 }
