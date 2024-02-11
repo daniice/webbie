@@ -717,14 +717,14 @@ button.sonicButton {
 }
 
 @media (min-width: 481px) {
-    .sonificationContent p {
+    .heatPumpWords p {
         font-size: 16px;
         color: white;
     }
 }
 
 @media (max-width: 480px) {
-    .sonificationContent p {
+    .heatPumpWords p {
         font-size: 14px;
         color: white;
     }
