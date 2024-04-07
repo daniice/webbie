@@ -1,5 +1,6 @@
 //GENERAL
-//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models, energy transimssion systems, energy market models, wealth inequality, climate tech funding, energy sector player sentiments/interactions, generative design
+//divide webpage up into multiple files and gits?
+//"numbers" category of data/science/policy/climate - building decarbonization widget, uncertainty in climate models and emissions data, energy transimssion systems, energy market model widget, wealth inequality, climate tech funding, energy sector player sentiments/interactions, generative design, "ESG"
 //compatibility with ipad! Images, soundtrack, words, others
 //link to github with PBDW map and data widgets in future
 //Google search and traffic analytics with console
@@ -46,6 +47,7 @@
 //dropdown within pagedrop?
 
 //FOR SOUNDTRACK
+//sources
 //hyperlink sources within page
 //widget to upload a dataset and have it sampled according to these choices
 //edit full thesis and upload document
@@ -53,6 +55,7 @@
 //line animation like dropdown on collapsibles?
 
 //FOR HEATPUMPS
+//sources
 //hoverToTap behavior iPad
 //mobile hover glitches
 //ideas in pages doc
@@ -62,7 +65,7 @@
 //FOR DER SYSTEMS/BENEFITS OF GRID DIGITALIZATION
 //scroll effects
 
-//FOR CLIMATE MODEL UNCERTAINTY
+//FOR CLIMATE MODEL/EMISSIONS DATA UNCERTAINTY
 //beautiful anyway
 //compare margins of error with other fields, illustrate effect (or lack of) on broader trends
 
